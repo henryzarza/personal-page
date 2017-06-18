@@ -1,0 +1,353 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:300,400,700);
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 11pt; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+    font-family: 'Nunito', Calibri, Arial, sans-serif;
+    color: #fff;
+    background: #333;
+}
+
+a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+.icon-social {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: #118A7C;
+  display: inline-block;
+  white-space: nowrap;
+  padding: .4em .54em;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: transparent;
+  box-shadow: 0 5px 6px 0 rgba(0,0,0,0.2);
+}
+
+.icon-social i {
+    transition: margin-right 0.2s ease;
+    color: #fff;
+}
+
+.icon-social:hover {
+    width: 8em;
+    border-radius: .3em;
+    color: #fff;
+    transform: translateX(-5px);
+}
+
+.icon-social span {
+    display: none;
+}
+
+.icon-social:hover span, .icon-social:active span {
+    display: inherit;
+}
+
+.icon-social:hover.linkedin, .icon-social:active.linkedin {
+    width: 8em;
+    background-color: #0077b5;
+}
+
+.icon-social:hover.google, .icon-social:active.google {
+    width: 12.5em;
+    background-color: #db4437;
+}
+
+.icon-social:hover.windows, .icon-social:active.windows {
+    width: 14em;
+    background-color: #0072c6;
+}
+
+.icon-social:hover.github, .icon-social:active.github {
+    width: 7.5em;
+    background-color: #24292e;
+}
+
+.icon-social:hover i {
+    margin-right: 10px;
+}
+
+.text-highlighted {
+    color: #118A7C;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/**Images skills*/
+.img-skills {
+    display: inline-block;
+    margin: .2em .5em;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: filter 0.5s ease-in-out;
+    -moz-transition: filter 0.5s ease-in-out;
+    -o-transition: filter 0.5s ease-in-out;
+    -ms-transition: filter 0.5s ease-in-out;
+    transition: filter 0.5s ease-in-out;
+}
+.img-skills:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+.bg-angular {
+    width: 80px; height: 80px;
+    background: url('../img/skills_sprites.png') -253px -10px;
+}
+.bg-bootstrap {
+    width: 95px; height: 80px;
+    background: url(../img/skills_sprites.png) -10px -17px;
+}
+.bg-c_sharp {
+    width: 80px; height: 80px;
+    background: url('../img/skills_sprites.png') -10px -133px;
+}
+.bg-C {
+    width: 80px; height: 55px;
+    background: url('../img/skills_sprites.png') -10px -446px;
+}
+.bg-css3 {
+    width: 68px; height: 76px;
+    background: url('../img/skills_sprites.png') -353px -104px;
+}
+.bg-js {
+    width: 75px; height: 75px;
+    background: url('../img/skills_sprites.png') -10px -233px;
+}
+.bg-laravel {
+    width: 70px; height: 70px;
+    background: url('../img/skills_sprites.png') -443px -190px;
+}
+.bg-less {
+    width: 100px; height: 43px;
+    background: url('../img/skills_sprites.png') -130px -387px;
+}
+.bg-materialize {
+    width: 80px; height: 80px;
+    background: url('../img/skills_sprites.png') -110px -133px;
+}
+.bg-mysql {
+    width: 80px; height: 41px;
+    background: url('../img/skills_sprites.png') -210px -453px;
+}
+.bg-foundation {
+    width: 100px; height: 58px;
+    background: url(../img/skills_sprites.png) -10px -389px;
+}
+.bg-html5 {
+    width: 65px; height: 72px;
+    background: url('../img/skills_sprites.png') -443px -280px;
+}
+.bg-java {
+    width: 75px; height: 75px;
+    background: url('../img/skills_sprites.png') -105px -233px;
+}
+.bg-jquery {
+    width: 70px; height: 74px;
+    background: url('../img/skills_sprites.png') -353px -10px;
+}
+.bg-oracle {
+    width: 120px; height: 27px;
+    background: url('../img/skills_sprites.png') -150px -328px;
+}
+.bg-php {
+    width: 80px; height: 55px;
+    background: url('../img/skills_sprites.png') -110px -440px;
+}
+.bg-postgresql {
+    width: 90px; height: 40px;
+    background: url('../img/skills_sprites.png') -250px -387px;
+}
+.bg-python {
+    width: 70px; height: 70px;
+    background: url('../img/skills_sprites.png') -353px -200px;
+}
+.bg-react {
+    width: 80px; height: 77px;
+    background: url('../img/skills_sprites.png') -253px -110px;
+}
+.bg-sass {
+    width: 100px; height: 80px;
+    background: url('../img/skills_sprites.png') -133px -10px;
+}
+.bg-sqlserver {
+    width: 80px; height: 65px;
+    background: url('../img/skills_sprites.png') -200px -233px;
+}
+.bg-ts {
+    width: 70px; height: 70px;
+    background: url('../img/skills_sprites.png') -443px -100px;
+}
+.bg-yii2 {
+    width: 70px; height: 70px;
+    background: url('../img/skills_sprites.png') -443px -10px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 4rem;
+    background-color: rgba(23, 49, 54, 0.81);
+    color: #fff;
+    font-size: .8rem;
+    border-radius: .5em;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -2rem;
+    border: .25em solid #118A7C;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -.3em;
+    border-width: .4em;
+    border-style: solid;
+    border-color: transparent transparent #118A7C transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    top: 75%;
+}
+
+.container-works {
+    display: flex;
+    align-items: center;
+}
+.container-works a {
+    width: 9rem;
+    margin: .2rem .5rem;
+}
+.container-works a img {
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: filter 0.5s ease-in-out;
+    -moz-transition: filter 0.5s ease-in-out;
+    -o-transition: filter 0.5s ease-in-out;
+    -ms-transition: filter 0.5s ease-in-out;
+    transition: filter 0.5s ease-in-out;
+}
+.container-works a:hover img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+.container-profile {
+    position: relative;
+}
+.mandala {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -31%;
+    width: 230px;
+    margin: auto;
+    -o-animation-play-state: running;
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+.mandala:first-child {
+    -webkit-animation-name: rotation;
+    -moz-animation-name: rotation;
+    -o-animation-name: rotation;
+    animation-name: rotation;
+    -webkit-animation-duration: 20s;
+    -moz-animation-duration: 20s;
+    -o-animation-duration: 20s;
+    animation-duration: 20s;
+}
+.mandala:nth-child(2) {
+    -webkit-animation-name: rotation;
+    -moz-animation-name: rotation;
+    -o-animation-name: rotation;
+    animation-name: rotation;
+    -webkit-animation-duration: 30s;
+    -moz-animation-duration: 30s;
+    -o-animation-duration: 30s;
+    animation-duration: 30s;
+}
+.mandala:nth-child(3) {
+    -webkit-animation-name: rotation;
+    -moz-animation-name: rotation;
+    -o-animation-name: rotation;
+    animation-name: rotation;
+    -webkit-animation-duration: 50s;
+    -moz-animation-duration: 50s;
+    -o-animation-duration: 50s;
+    animation-duration: 50s;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes rotation {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-o-keyframes rotation {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(360deg);
+    }
+}
+.title-profile {
+    margin-top: 2rem;
+}
+.open-right .side-right .intro-content .mandala {
+    -o-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
