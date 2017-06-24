@@ -14,27 +14,27 @@ body {
 }
 
 a {
-	color: #ccc;
-	text-decoration: none;
+    color: #ccc;
+    text-decoration: none;
 }
 
 a:hover {
-	color: #000;
+    color: #000;
 }
 
 .icon-social {
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  background-color: #118A7C;
-  display: inline-block;
-  white-space: nowrap;
-  padding: .4em .54em;
-  box-sizing: border-box;
-  transition: all 0.2s ease;
-  text-decoration: none;
-  color: transparent;
-  box-shadow: 0 5px 6px 0 rgba(0,0,0,0.2);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #118A7C;
+    display: inline-block;
+    white-space: nowrap;
+    padding: .4em .54em;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: transparent;
+    box-shadow: 0 5px 6px 0 rgba(0,0,0,0.2);
 }
 
 .icon-social i {

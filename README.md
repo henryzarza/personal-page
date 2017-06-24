@@ -1,2 +1,2 @@
 # henryzarza.github.io
-Página personal
+Personal page
