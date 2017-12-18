@@ -1,147 +1,177 @@
 <!DOCTYPE html>
-<html lang="es" class="no-js">
-
+<html>
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Personal page of Henry Zarza" />
+        <meta name="keywords" content="personal page, canvas, css, html, javascript" />
+        <meta name="author" content="Henry Zarza" />
+        
         <title>Henry Zarza</title>
-        <meta name="description" content="Página personal de Henry Zarza" />
-        <meta name="keywords" content="website personal, template Blueprint, css3, transition, effect, split, portfolio" />
-        <meta name="author" content="References of Codrops and modified by Henry Zarza" />
+
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="css/base.css" />
-        <link rel="stylesheet" type="text/css" href="css/component.css" />
-        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">        
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/styles.css">
+
+        <!-- Font Awesome -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
 
     <body>
+        <div class="btn-group btn-flags">
+            <input data-language="en" type="radio" name="options" id="optionEN">
+            <label for="optionEN">
+                <img class="flag-en" src="./img/flag-us.png" alt="Flag Us">
+            </label>
+            <input data-language="es" type="radio" name="options" id="optionES" checked>
+            <label for="optionES">
+                <img class="flag-es" src="./img/flag-es.png" alt="Flag ES">
+            </label>
+        </div>
 
-        <div class="container">
-            <div id="splitlayout" class="splitlayout">
+        <div class="container-fluid">
+            <div class="row">
 
-                <div class="intro">
-                    <div class="side side-right">
-                        <div class="intro-content">
-                            <div class="container-profile">
-                                <img class="mandala" src="img/cercle-1.png" alt="Mandala 1">
-                                <img class="mandala" src="img/cercle-2.png" alt="Mandala 2">
-                                <img class="mandala" src="img/cercle-3.png" alt="Mandala 3">
-                                <div class="profile"><img src="img/photo.jpg" alt="Henry Zarza"></div>
-                            </div>
-                            <h1 class="title-profile"><span>Henry Zarza </span><span>Desarrollador Web</span></h1>
+                <section class="col-12 p-0 section-canvas">
+                    <canvas></canvas>
+                    <img class="img-fluid" src="./img/photo.jpg" alt="Henry Zarza">
+                </section>
+
+                <section class="col-12 section section-biography">
+                    <h2 class="text-center mb-2">Acerca de mí</h2>
+                    <p class="text-justify">
+                        Hola, me llamo <strong>Henry Zarza</strong>, actualmente me encuentro en décimo semestre de
+                        ingeniería informática en el Politécnico Colombiano Jaime Isaza Cadavid. Vivo en la ciudad
+                        de Medellín en Colombia. Soy un apasionado y entusiasta por la programación y los algoritmos,
+                        me gusta especialmente la programación web, pues considero que es un espacio en el que puedo
+                        explotar y dejar volar mi creatividad e imaginación. Mi lenguaje de programación
+                        preferido es <strong>JavaScript</strong>, a mi parecer es un lenguaje muy flexible, robusto,
+                        con gran proyección y que se presta para trabajar en muchos campos de la informática. <br>
+                        En mi tiempo libre lo que más me gusta hacer es aprender cosas nuevas, buscar páginas interesantes,
+                        practicar yoga, hacer ejercicio, leer, escuchar música, caminar y ver series.
+                    </p>
+                    <button class="btn btn-ouline-info btn-social"> Encuéntrame en
+                        <a class="btn" target="_blank" href="https://github.com/henryzarza" title="GitHub">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn" target="_blank" href="https://twitter.com/henry_zarza" title="Twitter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn" target="_blank" href="https://codepen.io/HenryZarza/" title="CodePen">
+                            <i class="fa fa-codepen" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn" href="mailto:henryacz7@gmail.com" title="Gmail">
+                            <i class="fa fa-google" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn" target="_blank" href="https://www.linkedin.com/in/henry-alejandro-cano-zarza-1b167b145" title="LinkedIn">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </a>
+                    </button>
+                </section>
+
+                <section class="col-12 section section-skill">
+                    <h2 class="text-center title-skill">Conocimientos</h2>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mb-swatch">
+                            <ul class="swatch" id="swatch-0">
+                                <li class="swatch-item" data-color="#9b4f96">C#</li>
+                                <li class="swatch-item" data-color="#183052">Less</li>
+                                <li class="swatch-item" data-color="#767bb3">PHP</li>
+                                <li class="swatch-item" data-color="#2281e3">C y C++</li>
+                                <li class="swatch-item" data-color="#e33a33">Java</li>
+                                <li class="swatch-item" data-color="#cf639a">Sass</li>
+                                <li class="swatch-item" data-color="#0079cc">TypeScript</li>
+                                <li class="swatch-item" data-color="#33a9dd">CSS</li>
+                                <li class="swatch-item" data-color="#f16636">HTML</li>
+                                <li class="swatch-item text-dark" data-color="#f6e03c">JavaScript</li>
+                                <li class="swatch-item font-weight-bold" data-color="#29253e">Lenguajes y otros</li>
+                            </ul>
                         </div>
-                        <div class="overlay"></div>
+                        <div class="col-12 col-sm-6 mb-swatch">
+                            <ul class="swatch" id="swatch-1">
+                                <li class="swatch-item text-dark" data-color="#bad264">Yii 2</li>
+                                <li class="swatch-item" data-color="#f56650">Laravel</li>
+                                <li class="swatch-item text-dark" data-color="#aad8f7">Foundation</li>
+                                <li class="swatch-item" data-color="#d36e73">Materialize</li>
+                                <li class="swatch-item" data-color="#172c45">jQuery</li>
+                                <li class="swatch-item" data-color="#b52e31">Angularjs</li>
+                                <li class="swatch-item" data-color="#61488a">Bootstrap</li>
+                                <li class="swatch-item" data-color="#e23a37">Angular</li>
+                                <li class="swatch-item font-weight-bold" data-color="#29253e">Frameworks y librerías</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 mb-swatch">
+                            <ul class="swatch" id="swatch-2">
+                                <li class="swatch-item" data-color="#e38f34">MySQL</li>
+                                <li class="swatch-item" data-color="#020202">SQL Server</li>
+                                <li class="swatch-item" data-color="#e33a33">Oracle</li>
+                                <li class="swatch-item" data-color="#316192">PostgreSQL</li>
+                                <li class="swatch-item font-weight-bold" data-color="#29253e">Gestores de Bases de Datos</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 mb-swatch">
+                            <ul class="swatch" id="swatch-3">
+                                <li class="swatch-item" data-color="#3974a5">Python</li>
+                                <li class="swatch-item" data-color="#ef568f">RxJS</li>
+                                <li class="swatch-item text-dark" data-color="#61dafb">Reactjs</li>
+                                <li class="swatch-item" data-color="#8e714e">MongoDB</li>
+                                <li class="swatch-item" data-color="#649e58">Nodejs</li>
+                                <li class="swatch-item font-weight-bold" data-color="#29253e">Aprendiendo</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="page page-right">
-                    <div class="page-inner">
-
-                        <section>
-                            <h2>Resumen</h2>
-                            <p>
-                                Actualmente me encuentro terminando la carrera de pregrado de ingeniería informática,
-                                en el <strong>Politécnico Colombiano Jaime Isaza Cadavid</strong>. Soy una persona
-                                dedicada, autodidacta y apasionada a lo que me gusta, me fascina exigirme cada día más
-                                y enfrentar nuevos retos. Me defino a mí mismo como una persona extrovertida, sincero,
-                                muy descomplicado, aventurero, amante de los animales, el desarrollo web, los libros,
-                                el yoga y la naturaleza.
-                            </p>
-                            <a class="icon-social linkedin" href="https://www.linkedin.com/in/henry-alejandro-cano-zarza-1b167b145" target="_blank">
-                                <i class="fa fa-linkedin-square"></i>
-                                <span>Henry Zarza</span>
-                            </a>
-                            <a class="icon-social google" href="mailto:henryacz7@gmail.com">
-                                <i class="fa fa-google"></i>
-                                <span>henryacz7@gmail.com</span>
-                            </a>
-                            <a class="icon-social windows" href="mailto:henry_acz7@hotmail.com">
-                                <i class="fa fa-windows"></i>
-                                <span>henry_acz7@hotmail.com</span>
-                            </a>
-                            <a class="icon-social github" href="https://github.com/henryzarza" target="_blank">
-                                <i class="fa fa-github"></i>
-                                <span>henryzarza</span>
-                            </a>
-                        </section>
-
-                        <section>
-                            <h2>Conocimientos</h2>
-                            <p>
-                                <h5 class="text-highlighted">Manejados</h5>
-                                <div class="img-skills bg-js" title="JavaScript"></div>
-                                <div class="img-skills bg-html5" title="HTML5"></div>
-                                <div class="img-skills bg-css3" title="CSS3"></div>
-                                <div class="img-skills bg-ts" title="TypeScript"></div>
-                                <div class="img-skills bg-sass" title="SASS"></div>
-                                <div class="img-skills bg-java" title="Java"></div>
-                                <div class="img-skills bg-C" title="C++"></div>
-                                <div class="img-skills bg-less" title="LESS"></div>
-                                <div class="img-skills bg-php" title="PHP"></div>
-
-                                <h5 class="text-highlighted">Aprendiendo</h5>
-                                <h6>Actualmente me encuentro aprendiendo:</h6>
-                                <div class="img-skills bg-react" title="React"></div>
-                                <div class="img-skills bg-python" title="Python"></div>
-                                <div class="img-skills bg-c_sharp" title="C#"></div>
-
-                                <h5 class="text-highlighted">Frameworks y librerías</h5>
-                                <div class="img-skills bg-bootstrap" title="Bootstrap 3 y 4"></div>
-                                <div class="img-skills bg-jquery" title="jQuery"></div>
-                                <div class="img-skills bg-angular" title="Angular"></div>
-                                <div class="img-skills bg-materialize" title="Materialize"></div>
-                                <div class="img-skills bg-laravel" title="Laravel"></div>
-                                <div class="img-skills bg-foundation" title="Foundation 6"></div>
-                                <div class="img-skills bg-yii2" title="Yii 2"></div>
-
-                                <h5 class="text-highlighted">Gestores de Bases de datos</h5>
-                                <div class="img-skills bg-sqlserver" title="SQL Server y Transact-SQL"></div>
-                                <div class="img-skills bg-mysql" title="MySQL"></div>
-                                <div class="img-skills bg-postgresql" title="PostgreSQL"></div>
-                                <div class="img-skills bg-oracle" title="Oracle y PL/SQL"></div>
-                            </p>
-                        </section>
-
-                        <section>
-                            <h2>Trabajos</h2>
-                            <div class="container-works">
-                                <a href="http://offerapp.co/" target="_blank" title="offerapp">
-                                    <img src="img/works/offerapp.png" alt="Proyecto offerapp">
-                                </a>
-                                <a href="http://www.micargapp.com/" target="_blank" title="micargapp">
-                                    <img src="img/works/mi-cargapp.png" alt="Proyecto micargapp">
-                                </a>
-                                <a href="http://granada.io/" target="_blank" title="granada">
-                                    <img src="img/works/granada.png" alt="Proyecto granada">
-                                </a>
-                                <a href="http://syscar.granada.io/" target="_blank" title="syscar">
-                                    <img src="img/works/syscar.png" alt="Proyecto syscar">
-                                </a>
-                            </div>
-                        </section>
-
-                        <section>
-                            <span class="text-highlighted">
-                                Nadie espera que lo sepas todo. Solo diviértete y nunca pares de aprender.
-                            </span>
-                        </section>
-                        
+                <section class="col-12 section section-people">
+                    <h2 class="text-center mb-2">Personas</h2>
+                    <p class="text-justify">
+                        Estas personas han hecho un impacto muy positivo en mi vida, mostrándome y enseñándome
+                        que por más complicada que se vea la vida y las cosas, siempre con esfuerzo, dedicación,
+                        humildad y creyendo en uno mismo no hay nada que no se pueda lograr.
+                    </p>
+                    <div class="row">
+                        <div class="col-12 col-sm-4 mb-3">
+                            <img class="img-fluid img-people" src="./img/people/alberteinstein.jpg" alt="Albert Einstein">
+                            <h6 class="font-weight-bold text-center">Albert Einstein</h6>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3">
+                            <img class="img-fluid img-people" src="./img/people/ladygaga.jpg" alt="Lady Gaga">
+                            <h6 class="font-weight-bold text-center">Lady Gaga</h6>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3">
+                            <img class="img-fluid img-people" src="./img/people/alanturing.jpg" alt="Alan Turing">
+                            <h6 class="font-weight-bold text-center">Alan Turing</h6>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3">
+                            <img class="img-fluid img-people" src="./img/people/nelsonmandela.jpg" alt="Nelson Mandela">
+                            <h6 class="font-weight-bold text-center">Nelson Mandela</h6>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3">
+                            <img class="img-fluid img-people" src="./img/people/marylou.jpeg" alt="Mary Lou">
+                            <h6 class="font-weight-bold text-center">Mary Lou</h6>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3">
+                            <img class="img-fluid img-people" src="./img/people/johnsteinbeck.jpg" alt="John Steinbeck">
+                            <h6 class="font-weight-bold text-center">John Steinbeck</h6>
+                        </div>
                     </div>
-                </div>
+                </section>
 
-                <a href="#" class="back back-left tooltip">
-                    &larr; <span class="tooltiptext">Inicio</span>
-                </a>
-                
+                <section class="col-12 section section-footer text-center">
+                    Nadie espera que lo sepas todo, solo diviértete y nunca pares de aprender. <br>
+                    El verdadero crecimiento viene cuando dejamos nuestra zona de confort.
+                </section>
+
             </div>
         </div>
 
-        <script src="js/modernizr.custom.js"></script>
-        <script src="js/classie.js"></script>
-        <script src="js/cbpSplitLayout.js"></script>
-
+        <script src="./js/jquery-3.2.1.slim.min.js"></script>
+        <script src="./js/canvas.js"></script>
+        <script src="./js/main.js"></script>
+        
     </body>
-
 </html>
