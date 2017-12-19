@@ -23,13 +23,13 @@
 
     <body>
         <div class="btn-group btn-flags">
-            <input data-language="en" type="radio" name="options" id="optionEN">
+            <input value="en" type="radio" name="rdb_language" id="optionEN" checked>
             <label for="optionEN">
-                <img class="flag-en" src="./img/flag-us.png" alt="Flag Us">
+                <img class="flags" src="./img/flag-us.svg" alt="Flag USA">
             </label>
-            <input data-language="es" type="radio" name="options" id="optionES" checked>
+            <input value="es" type="radio" name="rdb_language" id="optionES">
             <label for="optionES">
-                <img class="flag-es" src="./img/flag-es.png" alt="Flag ES">
+                <img class="flags" src="./img/flag-es.svg" alt="Flag Spain">
             </label>
         </div>
 
@@ -38,23 +38,26 @@
 
                 <section class="col-12 p-0 section-canvas">
                     <canvas></canvas>
-                    <img class="img-fluid" src="./img/photo.jpg" alt="Henry Zarza">
+                    <div class="section-canvas-info">
+                        <img class="img-fluid" src="./img/photo.jpg" alt="Henry Zarza">
+                        <h1 class="text-white mt-3">Henry Zarza</h1>
+                        <h4 data-language="title" class="text-white">Web Developer</h4>
+                    </div>
                 </section>
 
                 <section class="col-12 section section-biography">
-                    <h2 class="text-center mb-2">Acerca de mí</h2>
-                    <p class="text-justify">
-                        Hola, me llamo <strong>Henry Zarza</strong>, actualmente me encuentro en décimo semestre de
-                        ingeniería informática en el Politécnico Colombiano Jaime Isaza Cadavid. Vivo en la ciudad
-                        de Medellín en Colombia. Soy un apasionado y entusiasta por la programación y los algoritmos,
-                        me gusta especialmente la programación web, pues considero que es un espacio en el que puedo
-                        explotar y dejar volar mi creatividad e imaginación. Mi lenguaje de programación
-                        preferido es <strong>JavaScript</strong>, a mi parecer es un lenguaje muy flexible, robusto,
-                        con gran proyección y que se presta para trabajar en muchos campos de la informática. <br>
-                        En mi tiempo libre lo que más me gusta hacer es aprender cosas nuevas, buscar páginas interesantes,
-                        practicar yoga, hacer ejercicio, leer, escuchar música, caminar y ver series.
+                    <h2 data-language="about" class="text-center mb-2">About me</h2>
+                    <p data-language="aboutContent" class="text-justify">
+                        Hi, my name is <strong>Henry Zarza</strong>, I'm currently in tenth semester of computer engineering 
+                        at Politéctico Colombiano Jaime Isaza Cadavid. I live in Medellín, Colombia.
+                        I'm passionate and enthusiastic about coding and algorithms, I especially like web development due I
+                        consider that's a space where I can exploit and let fly my creativity and imagination.
+                        My favorite programming language is <strong>JavaScript</strong>, in my opinion it's very
+                        flexible, robust and has great projection so it lends itself to work in many fields of computer science. <br>
+                        In my free time what I like to do the most is learn new things, look for interesting webpages,
+                        practice yoga, do exercise, read, listen music, walking and watch series.
                     </p>
-                    <button class="btn btn-ouline-info btn-social"> Encuéntrame en
+                    <button class="btn btn-ouline-info btn-social"> <span data-language="btnSocial">Meet me in</span>
                         <a class="btn" target="_blank" href="https://github.com/henryzarza" title="GitHub">
                             <i class="fa fa-github" aria-hidden="true"></i>
                         </a>
@@ -73,65 +76,13 @@
                     </button>
                 </section>
 
-                <section class="col-12 section section-skill">
-                    <h2 class="text-center title-skill">Conocimientos</h2>
-                    <div class="row">
-                        <div class="col-12 col-sm-6 mb-swatch">
-                            <ul class="swatch" id="swatch-0">
-                                <li class="swatch-item" data-color="#9b4f96">C#</li>
-                                <li class="swatch-item" data-color="#183052">Less</li>
-                                <li class="swatch-item" data-color="#767bb3">PHP</li>
-                                <li class="swatch-item" data-color="#2281e3">C y C++</li>
-                                <li class="swatch-item" data-color="#e33a33">Java</li>
-                                <li class="swatch-item" data-color="#cf639a">Sass</li>
-                                <li class="swatch-item" data-color="#0079cc">TypeScript</li>
-                                <li class="swatch-item" data-color="#33a9dd">CSS</li>
-                                <li class="swatch-item" data-color="#f16636">HTML</li>
-                                <li class="swatch-item text-dark" data-color="#f6e03c">JavaScript</li>
-                                <li class="swatch-item font-weight-bold" data-color="#29253e">Lenguajes y otros</li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-sm-6 mb-swatch">
-                            <ul class="swatch" id="swatch-1">
-                                <li class="swatch-item text-dark" data-color="#bad264">Yii 2</li>
-                                <li class="swatch-item" data-color="#f56650">Laravel</li>
-                                <li class="swatch-item text-dark" data-color="#aad8f7">Foundation</li>
-                                <li class="swatch-item" data-color="#d36e73">Materialize</li>
-                                <li class="swatch-item" data-color="#172c45">jQuery</li>
-                                <li class="swatch-item" data-color="#b52e31">Angularjs</li>
-                                <li class="swatch-item" data-color="#61488a">Bootstrap</li>
-                                <li class="swatch-item" data-color="#e23a37">Angular</li>
-                                <li class="swatch-item font-weight-bold" data-color="#29253e">Frameworks y librerías</li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-sm-6 mb-swatch">
-                            <ul class="swatch" id="swatch-2">
-                                <li class="swatch-item" data-color="#e38f34">MySQL</li>
-                                <li class="swatch-item" data-color="#020202">SQL Server</li>
-                                <li class="swatch-item" data-color="#e33a33">Oracle</li>
-                                <li class="swatch-item" data-color="#316192">PostgreSQL</li>
-                                <li class="swatch-item font-weight-bold" data-color="#29253e">Gestores de Bases de Datos</li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-sm-6 mb-swatch">
-                            <ul class="swatch" id="swatch-3">
-                                <li class="swatch-item" data-color="#3974a5">Python</li>
-                                <li class="swatch-item" data-color="#ef568f">RxJS</li>
-                                <li class="swatch-item text-dark" data-color="#61dafb">Reactjs</li>
-                                <li class="swatch-item" data-color="#8e714e">MongoDB</li>
-                                <li class="swatch-item" data-color="#649e58">Nodejs</li>
-                                <li class="swatch-item font-weight-bold" data-color="#29253e">Aprendiendo</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
                 <section class="col-12 section section-people">
-                    <h2 class="text-center mb-2">Personas</h2>
-                    <p class="text-justify">
-                        Estas personas han hecho un impacto muy positivo en mi vida, mostrándome y enseñándome
-                        que por más complicada que se vea la vida y las cosas, siempre con esfuerzo, dedicación,
-                        humildad y creyendo en uno mismo no hay nada que no se pueda lograr.
+                    <h2 class="text-center mb-2" data-language="titlePerson">Persons</h2>
+                    <p class="text-justify mb-3" data-language="contentPerson">
+                        These persons have done a very positive impact in my life, appearing and
+                        teaching me that for more complicated than sees the life and the things,
+                        always with effort, dedication, humility and believing in one itself there
+                        is nothing that could not be achieved.
                     </p>
                     <div class="row">
                         <div class="col-12 col-sm-4 mb-3">
@@ -161,15 +112,67 @@
                     </div>
                 </section>
 
-                <section class="col-12 section section-footer text-center">
-                    Nadie espera que lo sepas todo, solo diviértete y nunca pares de aprender. <br>
-                    El verdadero crecimiento viene cuando dejamos nuestra zona de confort.
+                <section class="col-12 section section-skill">
+                    <h2 class="text-center title-skill" data-language="titleKnowledge">Knowledge</h2>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mb-swatch">
+                            <ul class="swatch" id="swatch-0">
+                                <li class="swatch-item" data-color="#9b4f96">C#</li>
+                                <li class="swatch-item" data-color="#183052">Less</li>
+                                <li class="swatch-item" data-color="#767bb3">PHP</li>
+                                <li class="swatch-item" data-color="#2281e3">C y C++</li>
+                                <li class="swatch-item" data-color="#e33a33">Java</li>
+                                <li class="swatch-item" data-color="#cf639a">Sass</li>
+                                <li class="swatch-item" data-color="#0079cc">TypeScript</li>
+                                <li class="swatch-item" data-color="#33a9dd">CSS</li>
+                                <li class="swatch-item" data-color="#f16636">HTML</li>
+                                <li class="swatch-item text-dark" data-color="#f6e03c">JavaScript</li>
+                                <li class="swatch-item font-weight-bold" data-color="#29253e" data-language="titleSwatch0">Languages and others</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 mb-swatch">
+                            <ul class="swatch" id="swatch-1">
+                                <li class="swatch-item text-dark" data-color="#bad264">Yii 2</li>
+                                <li class="swatch-item" data-color="#f56650">Laravel</li>
+                                <li class="swatch-item text-dark" data-color="#aad8f7">Foundation</li>
+                                <li class="swatch-item" data-color="#d36e73">Materialize</li>
+                                <li class="swatch-item" data-color="#172c45">jQuery</li>
+                                <li class="swatch-item" data-color="#b52e31">Angularjs</li>
+                                <li class="swatch-item" data-color="#61488a">Bootstrap</li>
+                                <li class="swatch-item" data-color="#e23a37">Angular</li>
+                                <li class="swatch-item font-weight-bold" data-color="#29253e" data-language="titleSwatch1">Frameworks and libraries</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 mb-swatch">
+                            <ul class="swatch" id="swatch-2">
+                                <li class="swatch-item" data-color="#e38f34">MySQL</li>
+                                <li class="swatch-item" data-color="#020202">SQL Server</li>
+                                <li class="swatch-item" data-color="#e33a33">Oracle</li>
+                                <li class="swatch-item" data-color="#316192">PostgreSQL</li>
+                                <li class="swatch-item font-weight-bold" data-color="#29253e" data-language="titleSwatch2">Data Base</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 mb-swatch">
+                            <ul class="swatch" id="swatch-3">
+                                <li class="swatch-item" data-color="#3974a5">Python</li>
+                                <li class="swatch-item" data-color="#ef568f">RxJS</li>
+                                <li class="swatch-item text-dark" data-color="#61dafb">Reactjs</li>
+                                <li class="swatch-item" data-color="#8e714e">MongoDB</li>
+                                <li class="swatch-item" data-color="#649e58">Nodejs</li>
+                                <li class="swatch-item font-weight-bold" data-color="#29253e" data-language="titleSwatch3">Learning</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 section section-footer text-center" data-language="contentPhrases">
+                    Nobody hopes that you know everything, only amuse yourself and never stop learning. <br>
+                    The real growth comes when we leave our zone of comfort.
                 </section>
 
             </div>
         </div>
 
-        <script src="./js/jquery-3.2.1.slim.min.js"></script>
         <script src="./js/canvas.js"></script>
         <script src="./js/main.js"></script>
         

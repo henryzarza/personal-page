@@ -104,12 +104,12 @@ var drawCanvas = () => {
     star.animate();
   }
 
-  containerCanvas.onmousemove = function(event) {
+  containerCanvas.onmousemove = (event) => {
     mousePosition.x = event.pageX - containerCanvas.offsetLeft;
     mousePosition.y = event.pageY - containerCanvas.offsetTop;
   };
 
-  window.onresize = function(event) {
+  window.onresize = (event) => {
     canvas.width = containerCanvas.offsetWidth;
     canvas.height = containerCanvas.offsetHeight;    
   };
@@ -119,8 +119,3 @@ var drawCanvas = () => {
 
   setInterval(inicializate, 1000/20);  
 };
-
-window.onload = () => {
-  if (window.innerWidth > 576)
-    drawCanvas()
-}
