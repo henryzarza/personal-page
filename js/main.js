@@ -11,8 +11,8 @@ var language_configurarion = {
             In my free time what I like to do the most is learn new things, look for interesting webpages,
             practice yoga, do exercise, read, listen music, walking and watch series.`,
         'btnSocial': 'Meet me in',
-        'titlePerson': 'Persons',
-        'contentPerson': `These persons have done a very positive impact in my life, appearing and
+        'titlePeople': 'People',
+        'contentPeople': `These persons have done a very positive impact in my life,
             teaching me that for more complicated than sees the life and the things,
             always with effort, dedication, humility and believing in one itself there
             is nothing that could not be achieved.`,
@@ -37,8 +37,8 @@ var language_configurarion = {
             En mi tiempo libre lo que más me gusta hacer es aprender cosas nuevas, buscar páginas interesantes,
             practicar yoga, hacer ejercicio, leer, escuchar música, caminar y ver series.`,
         'btnSocial': 'Encuéntrame en',
-        'titlePerson': 'Personas',
-        'contentPerson': `Estas personas han hecho un impacto muy positivo en mi vida, mostrándome y enseñándome
+        'titlePeople': 'Personas',
+        'contentPeople': `Estas personas han hecho un impacto muy positivo en mi vida, enseñándome
             que por más complicada que se vea la vida y las cosas, siempre con esfuerzo, dedicación,
             humildad y creyendo en uno mismo no hay nada que no se pueda lograr.`,
         'titleKnowledge': 'Conocimientos',

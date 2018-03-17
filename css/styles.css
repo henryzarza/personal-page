@@ -1,5 +1,5 @@
 :root {
-    --darken-color: #12191C;
+    --darken-color: #132a39;
     --primary-color-accent: #CFCFBF;
     --primary-color: #29253e;
     --primary-color-dark: #606166;
@@ -76,11 +76,11 @@ html, body {
     padding: 3rem var(--padding-side-section);
 }
 .section-skill {
-    background-color: var(--darken-color);
-    color: var(--white);
+    background-color: var(--primary-color-accent);
 }
 .section-people {
-    background-color: var(--primary-color-accent);
+    background-color: var(--darken-color);
+    color: var(--white);
 }
 .section-footer {
     padding: 1rem 2rem;
