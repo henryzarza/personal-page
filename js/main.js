@@ -2,14 +2,12 @@ var language_configurarion = {
     'en': { 
         'title': 'Web Developer',
         'about': 'About me',
-        'aboutContent': `Hi, my name is <strong>Henry Zarza</strong>, I'm currently in tenth semester of computer engineering 
-            at Politéctico Colombiano Jaime Isaza Cadavid. I live in Medellín, Colombia.
-            I'm passionate and enthusiastic about coding and algorithms, I especially like web development due I
-            consider that's a space where I can exploit and let fly my creativity and imagination.
-            My favorite programming language is <strong>JavaScript</strong>, in my opinion it's very
-            flexible, robust and has great projection so it lends itself to work in many fields of computer science. <br>
-            In my free time what I like to do the most is learn new things, look for interesting webpages,
-            practice yoga, do exercise, read, listen music, walking and watch series.`,
+        'aboutContent': `Hi! my name is <strong>Henry Zarza</strong>, I'm student of tenth semester of computer engineering 
+            at Politéctico Colombiano Jaime Isaza Cadavid, web developer and student of languages. I live in Medellín,
+            Colombia. I love the programming, algorithms, the languages, the music, the series, read, yoga and walking. <br />
+            I like the web development because I consider that's a space where I can exploit and let fly my creativity
+            and imagination. My favorite programming language is <strong>JavaScript</strong>, in my opinion it's very
+            flexible, robust and has great projection so it lends itself to work in many fields of computer science.`,
         'btnSocial': 'Meet me in',
         'titlePeople': 'People',
         'contentPeople': `These persons have done a very positive impact in my life,
@@ -27,15 +25,13 @@ var language_configurarion = {
     'es': { 
         'title': 'Desarrollador Web',
         'about': 'Acerca de mí',
-        'aboutContent': `Hola, me llamo <strong>Henry Zarza</strong>, actualmente me encuentro en décimo semestre de
-            ingeniería informática en el Politécnico Colombiano Jaime Isaza Cadavid. Vivo en la ciudad
-            de Medellín en Colombia. Soy un apasionado y entusiasta por la programación y los algoritmos,
-            me gusta especialmente la programación web, pues considero que es un espacio en el que puedo
-            explotar y dejar volar mi creatividad e imaginación. Mi lenguaje de programación
-            preferido es <strong>JavaScript</strong>, a mi parecer es un lenguaje muy flexible, robusto,
-            con gran proyección y que se presta para trabajar en muchos campos de la informática. <br>
-            En mi tiempo libre lo que más me gusta hacer es aprender cosas nuevas, buscar páginas interesantes,
-            practicar yoga, hacer ejercicio, leer, escuchar música, caminar y ver series.`,
+        'aboutContent': `Hola! me llamo <strong>Henry Zarza</strong>, soy estudiante de décimo semestre de
+            ingeniería informática del Politécnico Colombiano Jaime Isaza Cadavid, desarrollador web y estudiante de idiomas también.
+            Vivo en la ciudad de Medellín en Colombia. Me apasiona la programación, los algoritmos, los idiomas, la música,
+            las series, leer, el yoga y caminar. <br />
+            Me gusta la programación web porque considero que puedo explotar y dejar volar mi creatividad e imaginación.
+            Mi lenguaje de programación preferido es <strong>JavaScript</strong>, a mi parecer es un lenguaje muy flexible,
+            robusto, con gran proyección y que se presta para trabajar en muchos campos de la informática.`,
         'btnSocial': 'Encuéntrame en',
         'titlePeople': 'Personas',
         'contentPeople': `Estas personas han hecho un impacto muy positivo en mi vida, enseñándome
