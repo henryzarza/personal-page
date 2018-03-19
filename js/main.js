@@ -4,7 +4,7 @@ var language_configurarion = {
         'about': 'About me',
         'aboutContent': `Hi! my name is <strong>Henry Zarza</strong>, I'm student of tenth semester of computer engineering 
             at Politéctico Colombiano Jaime Isaza Cadavid, web developer and student of languages. I live in Medellín,
-            Colombia. I love the programming, algorithms, the languages, the music, the series, read, yoga and walking. <br />
+            Colombia. I love the programming, algorithms, languages, music, series, read, practice yoga and walk. <br />
             I like the web development because I consider that's a space where I can exploit and let fly my creativity
             and imagination. My favorite programming language is <strong>JavaScript</strong>, in my opinion it's very
             flexible, robust and has great projection so it lends itself to work in many fields of computer science.`,
