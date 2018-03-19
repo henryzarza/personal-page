@@ -56,6 +56,8 @@ img {
 
 .text-left { text-align: left; }
 
+.mb-2 { margin-bottom: 1.5rem; }
+
 .section { padding: 3rem var(--padding-side-section); }
 
 /* Section canvas */
@@ -199,6 +201,18 @@ img {
     color: var(--white);
 }
 
+.container-people {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: .5rem;
+}
+
+.container-people__name {
+    font-size: .9rem;
+    font-weight: bold;
+}
+
 .section-footer {
     padding: 1rem 2rem;
     color: var(--purple-dark);
@@ -274,6 +288,7 @@ img {
 /* Responsive */
 @media (max-width: 36rem) {
     :root { --padding-side-section: 2rem; }
+    .container-people { grid-template-columns: 1fr 1fr; }
 }
 
 @media (min-width: 36.01rem) and (max-width: 48rem) {
