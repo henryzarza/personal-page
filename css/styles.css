@@ -1,11 +1,11 @@
 :root {
-    --darken-color: #132a39;
-    --primary-color-accent: #CFCFBF;
-    --primary-color: #29253e;
-    --primary-color-dark: #606166;
-    --dark-color: #09131F;
+    --red-dark: #791B21;
+    --color-accent: #E6DBA7;
+    --primary-color: #29253E;
+    --purple-dark: #09131F;
     --padding-side-section: 20rem;
     --height-canvas: 28rem;
+    --white: #fff;
 }
 
 /*Import Font*/
@@ -47,7 +47,7 @@ html, body {
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 }
 .section-biography {
-    background-color: var(--dark-color);
+    background-color: var(--purple-dark);
     color: var(--white);
 }
 .btn-flags {
@@ -76,15 +76,15 @@ html, body {
     padding: 3rem var(--padding-side-section);
 }
 .section-skill {
-    background-color: var(--primary-color-accent);
+    background-color: var(--color-accent);
 }
 .section-people {
-    background-color: var(--darken-color);
+    background-color: var(--red-dark);
     color: var(--white);
 }
 .section-footer {
     padding: 1rem 2rem;
-    color: var(--dark-color);
+    color: var(--purple-dark);
     background-color: var(--light);
 }
 .btn-social {
@@ -102,7 +102,7 @@ html, body {
 }
 .btn-social:hover, .btn-social:active, .btn-social:focus {
     color: var(--primary-color);
-    background-color: var(--primary-color-accent);
+    background-color: var(--color-accent);
     border-color: var(--primary-color);
 }
 .btn-social .btn {
@@ -213,7 +213,7 @@ html, body {
     height: 1.2rem;
     background: var(--white);
     margin: -.6rem 0 0 -.6rem;
-    box-shadow: inset 0 1px 1px var(--white), inset 0 -0.3em 0.2em var(--primary-color-accent), 0 0 0.6em rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 1px var(--white), inset 0 -0.3em 0.2em var(--color-accent), 0 0 0.6em rgba(0, 0, 0, 0.2);
 }
 .swatch-item:last-of-type:before {
     content: "";
