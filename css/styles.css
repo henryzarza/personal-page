@@ -13,62 +13,101 @@
     font-family: 'Arima Madurai';
     src: url('../font/Arima_Madurai/ArimaMadurai-Regular.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'Arima Madurai';
     src: url('../font/Arima_Madurai/ArimaMadurai-Bold.ttf') format('truetype');
     font-weight: bold;
 }
 
+*, ::after, ::before { box-sizing: border-box; }
+
 html, body {
     font-family: 'Arima Madurai', Helvetica, cursive;
     line-height: 2;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--purple-dark);
+    background-color: var(--white);
 }
-.btn:hover, .btn:active, .btn:focus {
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    margin-bottom: .5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+h1 { font-size: 2.5rem; }
+
+h4 { font-size: 1.5rem; }
+
+/* .btn:hover, .btn:active, .btn:focus {
     cursor: pointer;
     outline: none;
+} */
+
+.text-white {
+    color: var(--white);
 }
+
+/* Section canvas */
 .section-canvas {
-    background-color: var(--dark);
+    background-color: var(--purple-dark);
     background-image: url('../img/universe.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: var(--height-canvas, 28rem);
+    height: var(--height-canvas);
 }
-.section-canvas-info {
+
+.section-canvas__info {
     position: absolute;
     left: 0;
     right: 0;
     top: calc(var(--height-canvas)/5);
     text-align: center;
 }
-.section-canvas-info img {
+
+.section-canvas__img {
     width: 12rem;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
     -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+
+.section-canvas__title {
+    margin-top: 1rem;
 }
 .section-biography {
     background-color: var(--purple-dark);
     color: var(--white);
 }
-.btn-flags {
+
+/* Checkbox change language */
+.btn-language {
     position: fixed;
     top: 1rem;
     right: 1rem;
     z-index: 1;
+    display: inline-flex;
 }
-.btn-flags input {
+.btn-language__checkbox {
     display: none;
 }
-.btn-flags input + label {
+.btn-language__checkbox + label {
     padding: 0 .3rem;
     margin: 0;
     border-radius: .15rem;
 }
-.btn-flags input:checked + label, .btn-flags label:hover {
-    background-color: var(--primary-color);
+.btn-language__checkbox:checked + label, .btn-language label:hover {
+    background-color: var(--white);
     cursor: pointer;
 }
-.flags {
+.btn-language__flag {
     width: 1.7rem;
     height: 1rem;
 }

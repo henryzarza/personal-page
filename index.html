@@ -14,7 +14,7 @@
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="./css/styles.css">
 
         <!-- Font Awesome -->
@@ -22,153 +22,147 @@
     </head>
 
     <body>
-        <div class="btn-group btn-flags">
-            <input value="en" type="radio" name="rdb_language" id="optionEN" checked>
+        <div class="btn-language">
+            <input class="btn-language__checkbox" value="en" type="radio" name="rdb_language" id="optionEN" checked>
             <label for="optionEN">
-                <img class="flags" src="./img/flag-us.svg" alt="Flag USA">
+                <img class="btn-language__flag" src="./img/flag-us.svg" alt="Flag USA">
             </label>
-            <input value="es" type="radio" name="rdb_language" id="optionES">
+            <input class="btn-language__checkbox" value="es" type="radio" name="rdb_language" id="optionES">
             <label for="optionES">
-                <img class="flags" src="./img/flag-es.svg" alt="Flag Spain">
+                <img class="btn-language__flag" src="./img/flag-es.svg" alt="Flag Spain">
             </label>
         </div>
 
-        <div class="container-fluid">
-            <div class="row">
-
-                <section class="col-12 p-0 section-canvas">
-                    <canvas></canvas>
-                    <div class="section-canvas-info">
-                        <img class="img-fluid" src="./img/photo.jpg" alt="Henry Zarza">
-                        <h1 class="text-white mt-3">Henry Zarza</h1>
-                        <h4 data-language="title" class="text-white">Web Developer</h4>
-                    </div>
-                </section>
-
-                <section class="col-12 section section-biography">
-                    <h2 data-language="about" class="text-center mb-2">About me</h2>
-                    <p data-language="aboutContent" class="text-justify">
-                        Hi! my name is <strong>Henry Zarza</strong>, I'm student of tenth semester of computer engineering 
-                        at Politéctico Colombiano Jaime Isaza Cadavid, web developer and student of languages. I live in Medellín,
-                        Colombia. I love the programming, algorithms, the languages, the music, the series, read, yoga and walking. <br />
-                        I like the web development because I consider that's a space where I can exploit and let fly my creativity
-                        and imagination. My favorite programming language is <strong>JavaScript</strong>, in my opinion it's very
-                        flexible, robust and has great projection so it lends itself to work in many fields of computer science.
-                    </p>
-                    <button class="btn btn-ouline-info btn-social"> <span data-language="btnSocial">Meet me in</span>
-                        <a class="btn" target="_blank" href="https://github.com/henryzarza" title="GitHub">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                        </a>
-                        <a class="btn" target="_blank" href="https://twitter.com/henry_zarza" title="Twitter">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                        <a class="btn" target="_blank" href="https://codepen.io/HenryZarza/" title="CodePen">
-                            <i class="fa fa-codepen" aria-hidden="true"></i>
-                        </a>
-                        <a class="btn" href="mailto:henryacz7@gmail.com" title="Gmail">
-                            <i class="fa fa-google" aria-hidden="true"></i>
-                        </a>
-                        <a class="btn" target="_blank" href="https://www.linkedin.com/in/henry-alejandro-cano-zarza-1b167b145" title="LinkedIn">
-                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                        </a>
-                    </button>
-                </section>
-
-                <section class="col-12 section section-skill">
-                    <h2 class="text-center title-skill" data-language="titleKnowledge">Knowledge</h2>
-                    <div class="row">
-                        <div class="col-12 col-sm-6 mb-swatch">
-                            <ul class="swatch" id="swatch-0">
-                                <li class="swatch-item" data-color="#9b4f96">C#</li>
-                                <li class="swatch-item" data-color="#183052">Less</li>
-                                <li class="swatch-item" data-color="#767bb3">PHP</li>
-                                <li class="swatch-item" data-color="#2281e3">C y C++</li>
-                                <li class="swatch-item" data-color="#e33a33">Java</li>
-                                <li class="swatch-item" data-color="#cf639a">Sass</li>
-                                <li class="swatch-item" data-color="#0079cc">TypeScript</li>
-                                <li class="swatch-item" data-color="#33a9dd">CSS</li>
-                                <li class="swatch-item" data-color="#f16636">HTML</li>
-                                <li class="swatch-item text-dark" data-color="#f6e03c">JavaScript</li>
-                                <li class="swatch-item font-weight-bold" data-color="#29253e" data-language="titleSwatch0">Languages and others</li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-sm-6 mb-swatch">
-                            <ul class="swatch" id="swatch-1">
-                                <li class="swatch-item text-dark" data-color="#bad264">Yii 2</li>
-                                <li class="swatch-item" data-color="#f56650">Laravel</li>
-                                <li class="swatch-item text-dark" data-color="#aad8f7">Foundation</li>
-                                <li class="swatch-item" data-color="#d36e73">Materialize</li>
-                                <li class="swatch-item" data-color="#172c45">jQuery</li>
-                                <li class="swatch-item" data-color="#b52e31">Angularjs</li>
-                                <li class="swatch-item" data-color="#61488a">Bootstrap</li>
-                                <li class="swatch-item" data-color="#e23a37">Angular</li>
-                                <li class="swatch-item font-weight-bold" data-color="#29253e" data-language="titleSwatch1">Frameworks and libraries</li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-sm-6 mb-swatch">
-                            <ul class="swatch" id="swatch-2">
-                                <li class="swatch-item" data-color="#e38f34">MySQL</li>
-                                <li class="swatch-item" data-color="#020202">SQL Server</li>
-                                <li class="swatch-item" data-color="#e33a33">Oracle</li>
-                                <li class="swatch-item" data-color="#316192">PostgreSQL</li>
-                                <li class="swatch-item font-weight-bold" data-color="#29253e" data-language="titleSwatch2">Data Base</li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-sm-6 mb-swatch">
-                            <ul class="swatch" id="swatch-3">
-                                <li class="swatch-item" data-color="#3974a5">Python</li>
-                                <li class="swatch-item" data-color="#ef568f">RxJS</li>
-                                <li class="swatch-item text-dark" data-color="#61dafb">Reactjs</li>
-                                <li class="swatch-item" data-color="#8e714e">MongoDB</li>
-                                <li class="swatch-item" data-color="#649e58">Nodejs</li>
-                                <li class="swatch-item font-weight-bold" data-color="#29253e" data-language="titleSwatch3">Learning</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="col-12 section section-people">
-                    <h2 class="text-center mb-2" data-language="titlePeople">People</h2>
-                    <p class="text-justify mb-3" data-language="contentPeople">
-                        These persons have done a very positive impact in my life, teaching me that
-                        for more complicated than sees the life and the things, always with effort,
-                        dedication, humility and believing in one itself there is nothing that could not be achieved.
-                    </p>
-                    <div class="row">
-                        <div class="col-12 col-sm-4 mb-3">
-                            <img class="img-fluid img-people" src="./img/people/alberteinstein.jpg" alt="Albert Einstein">
-                            <h6 class="font-weight-bold text-center">Albert Einstein</h6>
-                        </div>
-                        <div class="col-12 col-sm-4 mb-3">
-                            <img class="img-fluid img-people" src="./img/people/ladygaga.jpg" alt="Lady Gaga">
-                            <h6 class="font-weight-bold text-center">Lady Gaga</h6>
-                        </div>
-                        <div class="col-12 col-sm-4 mb-3">
-                            <img class="img-fluid img-people" src="./img/people/alanturing.jpg" alt="Alan Turing">
-                            <h6 class="font-weight-bold text-center">Alan Turing</h6>
-                        </div>
-                        <div class="col-12 col-sm-4 mb-3">
-                            <img class="img-fluid img-people" src="./img/people/nelsonmandela.jpg" alt="Nelson Mandela">
-                            <h6 class="font-weight-bold text-center">Nelson Mandela</h6>
-                        </div>
-                        <div class="col-12 col-sm-4 mb-3">
-                            <img class="img-fluid img-people" src="./img/people/marylou.jpeg" alt="Mary Lou">
-                            <h6 class="font-weight-bold text-center">Mary Lou</h6>
-                        </div>
-                        <div class="col-12 col-sm-4 mb-3">
-                            <img class="img-fluid img-people" src="./img/people/johnsteinbeck.jpg" alt="John Steinbeck">
-                            <h6 class="font-weight-bold text-center">John Steinbeck</h6>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="col-12 section section-footer text-center" data-language="contentPhrases">
-                    Nobody hopes that you know everything, only amuse yourself and never stop learning. <br>
-                    The real growth comes when we leave our zone of comfort.
-                </section>
-
+        <section class="section-canvas">
+            <canvas></canvas>
+            <div class="section-canvas__info">
+                <img class="section-canvas__img" src="./img/photo.jpg" alt="Henry Zarza">
+                <h1 class="section-canvas__title text-white">Henry Zarza</h1>
+                <h4 data-language="title" class="text-white">Web Developer</h4>
             </div>
-        </div>
+        </section>
+
+        <section class="section section-biography">
+            <h2 data-language="about" class="text-center mb-2">About me</h2>
+            <p data-language="aboutContent" class="text-justify">
+                Hi! my name is <strong>Henry Zarza</strong>, I'm student of tenth semester of computer engineering 
+                at Politéctico Colombiano Jaime Isaza Cadavid, web developer and student of languages. I live in Medellín,
+                Colombia. I love the programming, algorithms, the languages, the music, the series, read, yoga and walking. <br />
+                I like the web development because I consider that's a space where I can exploit and let fly my creativity
+                and imagination. My favorite programming language is <strong>JavaScript</strong>, in my opinion it's very
+                flexible, robust and has great projection so it lends itself to work in many fields of computer science.
+            </p>
+            <button class="btn btn-ouline-info btn-social"> <span data-language="btnSocial">Meet me in</span>
+                <a class="btn" target="_blank" href="https://github.com/henryzarza" title="GitHub">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a class="btn" target="_blank" href="https://twitter.com/henry_zarza" title="Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a class="btn" target="_blank" href="https://codepen.io/HenryZarza/" title="CodePen">
+                    <i class="fa fa-codepen" aria-hidden="true"></i>
+                </a>
+                <a class="btn" href="mailto:henryacz7@gmail.com" title="Gmail">
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                </a>
+                <a class="btn" target="_blank" href="https://www.linkedin.com/in/henry-alejandro-cano-zarza-1b167b145" title="LinkedIn">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+            </button>
+        </section>
+
+        <section class="section section-skill">
+            <h2 class="text-center title-skill" data-language="titleKnowledge">Knowledge</h2>
+            <div class="row">
+                <div class="col-12 col-sm-6 mb-swatch">
+                    <ul class="swatch" id="swatch-0">
+                        <li class="swatch-item" data-color="#9b4f96">C#</li>
+                        <li class="swatch-item" data-color="#183052">Less</li>
+                        <li class="swatch-item" data-color="#767bb3">PHP</li>
+                        <li class="swatch-item" data-color="#2281e3">C y C++</li>
+                        <li class="swatch-item" data-color="#e33a33">Java</li>
+                        <li class="swatch-item" data-color="#cf639a">Sass</li>
+                        <li class="swatch-item" data-color="#0079cc">TypeScript</li>
+                        <li class="swatch-item" data-color="#33a9dd">CSS</li>
+                        <li class="swatch-item" data-color="#f16636">HTML</li>
+                        <li class="swatch-item text-dark" data-color="#f6e03c">JavaScript</li>
+                        <li class="swatch-item font-weight-bold" data-color="#29253e" data-language="titleSwatch0">Languages and others</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 mb-swatch">
+                    <ul class="swatch" id="swatch-1">
+                        <li class="swatch-item text-dark" data-color="#bad264">Yii 2</li>
+                        <li class="swatch-item" data-color="#f56650">Laravel</li>
+                        <li class="swatch-item text-dark" data-color="#aad8f7">Foundation</li>
+                        <li class="swatch-item" data-color="#d36e73">Materialize</li>
+                        <li class="swatch-item" data-color="#172c45">jQuery</li>
+                        <li class="swatch-item" data-color="#b52e31">Angularjs</li>
+                        <li class="swatch-item" data-color="#61488a">Bootstrap</li>
+                        <li class="swatch-item" data-color="#e23a37">Angular</li>
+                        <li class="swatch-item font-weight-bold" data-color="#29253e" data-language="titleSwatch1">Frameworks and libraries</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 mb-swatch">
+                    <ul class="swatch" id="swatch-2">
+                        <li class="swatch-item" data-color="#e38f34">MySQL</li>
+                        <li class="swatch-item" data-color="#020202">SQL Server</li>
+                        <li class="swatch-item" data-color="#e33a33">Oracle</li>
+                        <li class="swatch-item" data-color="#316192">PostgreSQL</li>
+                        <li class="swatch-item font-weight-bold" data-color="#29253e" data-language="titleSwatch2">Data Base</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 mb-swatch">
+                    <ul class="swatch" id="swatch-3">
+                        <li class="swatch-item" data-color="#3974a5">Python</li>
+                        <li class="swatch-item" data-color="#ef568f">RxJS</li>
+                        <li class="swatch-item text-dark" data-color="#61dafb">Reactjs</li>
+                        <li class="swatch-item" data-color="#8e714e">MongoDB</li>
+                        <li class="swatch-item" data-color="#649e58">Nodejs</li>
+                        <li class="swatch-item font-weight-bold" data-color="#29253e" data-language="titleSwatch3">Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-people">
+            <h2 class="text-center mb-2" data-language="titlePeople">People</h2>
+            <p class="text-justify mb-3" data-language="contentPeople">
+                These persons have done a very positive impact in my life, teaching me that
+                for more complicated than sees the life and the things, always with effort,
+                dedication, humility and believing in one itself there is nothing that could not be achieved.
+            </p>
+            <div class="row">
+                <div class="col-12 col-sm-4 mb-3">
+                    <img class="img-fluid img-people" src="./img/people/alberteinstein.jpg" alt="Albert Einstein">
+                    <h6 class="font-weight-bold text-center">Albert Einstein</h6>
+                </div>
+                <div class="col-12 col-sm-4 mb-3">
+                    <img class="img-fluid img-people" src="./img/people/ladygaga.jpg" alt="Lady Gaga">
+                    <h6 class="font-weight-bold text-center">Lady Gaga</h6>
+                </div>
+                <div class="col-12 col-sm-4 mb-3">
+                    <img class="img-fluid img-people" src="./img/people/alanturing.jpg" alt="Alan Turing">
+                    <h6 class="font-weight-bold text-center">Alan Turing</h6>
+                </div>
+                <div class="col-12 col-sm-4 mb-3">
+                    <img class="img-fluid img-people" src="./img/people/nelsonmandela.jpg" alt="Nelson Mandela">
+                    <h6 class="font-weight-bold text-center">Nelson Mandela</h6>
+                </div>
+                <div class="col-12 col-sm-4 mb-3">
+                    <img class="img-fluid img-people" src="./img/people/marylou.jpeg" alt="Mary Lou">
+                    <h6 class="font-weight-bold text-center">Mary Lou</h6>
+                </div>
+                <div class="col-12 col-sm-4 mb-3">
+                    <img class="img-fluid img-people" src="./img/people/johnsteinbeck.jpg" alt="John Steinbeck">
+                    <h6 class="font-weight-bold text-center">John Steinbeck</h6>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-footer text-center" data-language="contentPhrases">
+            Nobody hopes that you know everything, only amuse yourself and never stop learning. <br>
+            The real growth comes when we leave our zone of comfort.
+        </section>
 
         <script src="./js/canvas.js"></script>
         <script src="./js/main.js"></script>
