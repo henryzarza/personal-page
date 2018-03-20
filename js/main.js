@@ -1,4 +1,6 @@
-var language_configurarion = {
+"use strict";
+
+const language_configurarion = {
     'en': { 
         'title': 'Web Developer',
         'about': 'About me',
@@ -14,13 +16,8 @@ var language_configurarion = {
             teaching me that for more complicated than sees the life and the things,
             always with effort, dedication, humility and believing in one itself there
             is nothing that could not be achieved.`,
-        'titleKnowledge': 'Knowledge',
         'contentPhrases': `Nobody hopes that you know everything, only amuse yourself and never stop learning. <br>
-            The real growth comes when we leave our zone of comfort.`,
-        'titleSwatch0': 'Language and others',
-        'titleSwatch1': 'Frameworks and libraries',
-        'titleSwatch2': 'Data Base',
-        'titleSwatch3': 'Learning'
+            The real growth comes when we leave our zone of comfort.`
     },
     'es': { 
         'title': 'Desarrollador Web',
@@ -37,44 +34,64 @@ var language_configurarion = {
         'contentPeople': `Estas personas han hecho un impacto muy positivo en mi vida, enseñándome
             que por más complicada que se vea la vida y las cosas, siempre con esfuerzo, dedicación,
             humildad y creyendo en uno mismo no hay nada que no se pueda lograr.`,
-        'titleKnowledge': 'Conocimientos',
         'contentPhrases': `Nadie espera que lo sepas todo, solo diviértete y nunca pares de aprender. <br>
-            El verdadero crecimiento viene cuando dejamos nuestra zona de confort.`,
-        'titleSwatch0': 'Lenguajes y otros',
-        'titleSwatch1': 'Frameworks y librerías',
-        'titleSwatch2': 'Base de Datos',
-        'titleSwatch3': 'Aprendiendo'
+            El verdadero crecimiento viene cuando dejamos nuestra zona de confort.`
     }
 }
 
+const skills = document.querySelectorAll(`.skills__item`);
+const triggerSkill = document.querySelector('#js-toggleSkill');
+
 function changeLanguage(language) {
-    localStorage.setItem('language', language);
+    let typeLanguage = language;
+
+    if (typeof language == 'object')
+        typeLanguage = language.target.value;
+
+    localStorage.setItem('language', typeLanguage);
     document.querySelectorAll('[data-language]').forEach(element => {
-        element.innerHTML = language_configurarion[language][element.dataset.language];
+        element.innerHTML = language_configurarion[typeLanguage][element.dataset.language];
     });
 }
 
-document.getElementsByName('rdb_language').forEach(element => element.addEventListener('change', (event) => {
-    changeLanguage(event.target.value);
-}));
+function toggleSkill(open) {
+    if (open) {
+        const container = document.querySelector('.skills');
+        let iteratorWidth = container.offsetWidth/skills.length;
+        skills.forEach((element, index) => {
+            let positionX = iteratorWidth * index;
+            let positionY = element.dataset.position;
+            element.style.transform = `translate(${positionX}px, ${positionY}) scale(1)`;
+        });
+    } else {
+        skills.forEach((element) => {
+            element.style.transform = `translate(var(--center-skills), calc(var(--height-skills)/2)) scale(0)`;
+        });
+    }
+}
 
-document.querySelectorAll('.swatch').forEach((element, index) => {
-    document.querySelectorAll(`#swatch-${index} li`).forEach((innerElement, innerIndex) => {
-        innerElement.style.backgroundColor = innerElement.dataset.color;
-        innerElement.style.transform = 'rotate(' + (20 - (innerIndex*3)) + 'deg)';
-    });
-
-    document.querySelectorAll(`#swatch-${index} li`).forEach(elem => elem.addEventListener('click', (e) => {
-        document.querySelectorAll(`#swatch-${index} li`).forEach(el => el.classList.remove('active'));
-        e.target.classList.add('active');
-    }));
+skills.forEach((element) => {
+    element.style.borderColor = element.dataset.color;
 });
 
+triggerSkill.addEventListener('click', (event) => {
+    event.target.classList.toggle('skills__item--principal--active');
+    toggleSkill(event.target.classList.contains('skills__item--principal--active'));
+});
+
+document.getElementsByName('rdb_language').forEach(element => element.addEventListener('change', changeLanguage));
+
 window.onload = () => {
+
+    window.addEventListener('resize', (e) => {
+        if (triggerSkill.classList.contains('skills__item--principal--active'))
+            toggleSkill(true);
+    });
+
     if (window.innerWidth > 576)
       drawCanvas();
     
-    var language = localStorage.getItem('language');
+    const language = localStorage.getItem('language');
     if (language) {
         document.getElementsByName('rdb_language').forEach(elem => {
             if (elem.value == language)
