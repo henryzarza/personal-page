@@ -251,7 +251,6 @@ img {
     border-width: .1rem;
     font-weight: bold;
     color: var(--primary-color);
-    transform: translate(var(--center-skills), calc(var(--height-skills)/2)) scale(0);
     transition: transform .3s linear;
 }
 

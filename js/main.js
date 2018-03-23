@@ -63,11 +63,15 @@ function toggleSkill(open) {
             let positionY = element.dataset.position;
             element.style.transform = `translate(${positionX}px, ${positionY}) scale(1)`;
         });
-    } else {
-        skills.forEach((element) => {
-            element.style.transform = `translate(var(--center-skills), calc(var(--height-skills)/2)) scale(0)`;
-        });
-    }
+    } else
+        setPositionSkillsItem();
+}
+
+function setPositionSkillsItem() {
+    const skillPrincipal = document.querySelector('.skills__item--principal');
+    skills.forEach(element => {
+        element.style.transform = `translate(${skillPrincipal.offsetLeft}px, ${skillPrincipal.offsetTop}px) scale(0)`;
+    });
 }
 
 skills.forEach((element) => {
@@ -99,4 +103,6 @@ window.onload = () => {
         });
         changeLanguage(language);
     }
+
+    setPositionSkillsItem();
 }
