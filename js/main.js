@@ -1,12 +1,11 @@
 "use strict";
 
 const language_configurarion = {
-    'en': { 
+    'en': {
         'title': 'Web Developer',
         'about': 'About me',
-        'aboutContent': `Hi! my name is <strong>Henry Zarza</strong>, I'm student of tenth semester of computer engineering 
-            at Politéctico Colombiano Jaime Isaza Cadavid, web developer and student of languages. I live in Medellín,
-            Colombia. I love the programming, algorithms, languages, music, series, read, practice yoga and walk. <br />
+        'aboutContent': `Hi, my name is <strong>Henry Zarza</strong>, I'm a computer engineering, web developer and student of languages.
+            I love the programming, algorithms, languages, music, series, read, practice yoga and walk. <br />
             I like the web development because I consider that's a space where I can exploit and let fly my creativity
             and imagination. My favorite programming language is <strong>JavaScript</strong>, in my opinion it's very
             flexible, robust and has great projection so it lends itself to work in many fields of computer science.`,
@@ -19,15 +18,14 @@ const language_configurarion = {
         'contentPhrases': `Nobody hopes that you know everything, only amuse yourself and never stop learning. <br>
             The real growth comes when we leave our zone of comfort.`
     },
-    'es': { 
+    'es': {
         'title': 'Desarrollador Web',
         'about': 'Acerca de mí',
-        'aboutContent': `Hola! me llamo <strong>Henry Zarza</strong>, soy estudiante de décimo semestre de
-            ingeniería informática del Politécnico Colombiano Jaime Isaza Cadavid, desarrollador web y estudiante de idiomas también.
-            Vivo en la ciudad de Medellín en Colombia. Me apasiona la programación, los algoritmos, los idiomas, la música,
+        'aboutContent': `Hola, me llamo <strong>Henry Zarza</strong>, soy ingeniero informático, desarrollador web y estudiante de idiomas.
+            Me apasiona la programación, los algoritmos, los idiomas, la música,
             las series, leer, el yoga y caminar. <br />
             Me gusta la programación web porque considero que puedo explotar y dejar volar mi creatividad e imaginación.
-            Mi lenguaje de programación preferido es <strong>JavaScript</strong>, a mi parecer es un lenguaje muy flexible,
+            Mi lenguaje de programación preferido es <strong>JavaScript</strong>, a mí parecer es un lenguaje muy flexible,
             robusto, con gran proyección y que se presta para trabajar en muchos campos de la informática.`,
         'btnSocial': 'Encuéntrame en',
         'titlePeople': 'Personas',
@@ -57,7 +55,7 @@ function changeLanguage(language) {
 function toggleSkill(open) {
     if (open) {
         const container = document.querySelector('.skills');
-        let iteratorWidth = container.offsetWidth/skills.length;
+        let iteratorWidth = container.offsetWidth / skills.length;
         skills.forEach((element, index) => {
             let positionX = iteratorWidth * index;
             let positionY = element.dataset.position;
@@ -93,8 +91,8 @@ window.onload = () => {
     });
 
     if (window.innerWidth > 576)
-      drawCanvas();
-    
+        drawCanvas();
+
     const language = localStorage.getItem('language');
     if (language) {
         document.getElementsByName('rdb_language').forEach(elem => {
