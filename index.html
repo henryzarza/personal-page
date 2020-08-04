@@ -1,148 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="description" content="Personal page of Henry Zarza" />
-        <meta name="keywords" content="personal page, canvas, css, html, javascript" />
-        <meta name="author" content="Henry Zarza" />
-        
-        <title>Henry Zarza</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal page of Henry Zarza" />
+    <meta
+      name="keywords"
+      content="personal page, css, html, javascript, web developer"
+    />
+    <meta name="author" content="Henry Zarza" />
+    <title>Henry Zarza</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
 
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Style -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-        <!-- Style -->
-        <link rel="stylesheet" href="./css/styles.css">
-
-        <!-- Font Awesome -->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    </head>
-
-    <body>
-        <div class="btn-language">
-            <input class="btn-language__checkbox" value="en" type="radio" name="rdb_language" id="optionEN" checked>
-            <label for="optionEN">
-                <img class="btn-language__flag" src="./img/flag-us.svg" alt="Flag USA">
-            </label>
-            <input class="btn-language__checkbox" value="es" type="radio" name="rdb_language" id="optionES">
-            <label for="optionES">
-                <img class="btn-language__flag" src="./img/flag-es.svg" alt="Flag Spain">
-            </label>
-        </div>
-
-        <section class="section-canvas">
-            <canvas></canvas>
-            <div class="section-canvas__info">
-                <img class="section-canvas__img" src="./img/photo.jpg" alt="Henry Zarza">
-                <h1 class="section-canvas__title text-white">Henry Zarza</h1>
-                <h4 data-language="title" class="text-white">Web Developer</h4>
-            </div>
-        </section>
-
-        <section class="section section-biography">
-            <h2 data-language="about" class="text-center mb-2">About me</h2>
-            <p data-language="aboutContent" class="text-left">
-                Hi! my name is <strong>Henry Zarza</strong>, I'm student of tenth semester of computer engineering 
-                at Politéctico Colombiano Jaime Isaza Cadavid, web developer and student of languages. I live in Medellín,
-                Colombia. I love the programming, algorithms, languages, music, series, read, practice yoga and walk. <br />
-                I like the web development because I consider that's a space where I can exploit and let fly my creativity
-                and imagination. My favorite programming language is <strong>JavaScript</strong>, in my opinion it's very
-                flexible, robust and has great projection so it lends itself to work in many fields of computer science.
-            </p>
-            <button class="btn btn__social">
-                <div class="btn-content-hide" data-language="btnSocial">Meet me in</div>
-                <div class="btn-links-inside">
-                    <a class="btn-links-inside__item" target="_blank" href="https://github.com/henryzarza" title="GitHub">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>
-                    <a class="btn-links-inside__item" target="_blank" href="https://twitter.com/henry_zarza" title="Twitter">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                    <a class="btn-links-inside__item" target="_blank" href="https://codepen.io/HenryZarza/" title="CodePen">
-                        <i class="fa fa-codepen" aria-hidden="true"></i>
-                    </a>
-                    <a class="btn-links-inside__item" href="mailto:henryacz7@gmail.com" title="Gmail">
-                        <i class="fa fa-google" aria-hidden="true"></i>
-                    </a>
-                    <a class="btn-links-inside__item" target="_blank" href="https://www.linkedin.com/in/henry-zarza-1b167b145/" title="LinkedIn">
-                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </button>
-        </section>
-
-        <section class="section section-skill">
-            <ul class="skills">
-                <li class="skills__item--principal text-white" id="js-toggleSkill">Skills</li>
-                <li class="skills__item" data-position="22.5rem" data-color="#9b4f96">C#</li>
-                <li class="skills__item" data-position="1.2rem" data-color="#183052">Less</li>
-                <li class="skills__item" data-position="9.5rem" data-color="#767bb3">PHP</li>
-                <li class="skills__item" data-position="4.5rem" data-color="#cf639a">Sass</li>
-                <li class="skills__item" data-position="19rem" data-color="#0079cc">TypeScript</li>
-                <li class="skills__item" data-position="13rem" data-color="#33a9dd">CSS</li>
-                <li class="skills__item" data-position="7rem" data-color="#f16636">HTML</li>
-                <li class="skills__item" data-position="15rem" data-color="#f6e03c">JavaScript</li>
-                <li class="skills__item" data-position="0rem" data-color="#f56650">Laravel</li>
-                <li class="skills__item" data-position="3.5rem" data-color="#61488a">Bootstrap</li>
-                <li class="skills__item" data-position="22rem" data-color="#e23a37">Angular</li>
-                <li class="skills__item" data-position="8.2rem" data-color="#e38f34">MySQL</li>
-                <li class="skills__item" data-position="17.2rem" data-color="#020202">SQL Server</li>
-                <li class="skills__item" data-position="14rem" data-color="#e33a33">Oracle</li>
-                <li class="skills__item" data-position="10.5rem" data-color="#316192">PostgreSQL</li>
-                <li class="skills__item" data-position="6.3rem" data-color="#8e714e">MongoDB</li>
-                <li class="skills__item" data-position="20.4rem" data-color="#61dafb">Reactjs</li>
-                <li class="skills__item" data-position="0.7rem" data-color="#649e58">Nodejs</li>
-                <li class="skills__item" data-position="4.2rem" data-color="#e33a33">Java</li>
-                <li class="skills__item" data-position="11.5rem" data-color="#aad8f7">Foundation</li>
-                <li class="skills__item" data-position="15.3rem" data-color="#d36e73">Materialize</li>
-                <li class="skills__item" data-position="6.5rem" data-color="#172c45">jQuery</li>
-            </ul>
-        </section>
-
-        <section class="section section-people">
-            <h2 class="text-center mb-2" data-language="titlePeople">People</h2>
-            <p class="text-left mb-2" data-language="contentPeople">
-                These persons have done a very positive impact in my life, teaching me that
-                for more complicated than sees the life and the things, always with effort,
-                dedication, humility and believing in one itself there is nothing that could not be achieved.
-            </p>
-            <div class="container-people">
-                <div>
-                    <img class="img-fluid img-people" src="./img/people/alberteinstein.jpg" alt="Albert Einstein">
-                    <h6 class="container-people__name text-center">Albert Einstein</h6>
-                </div>
-                <div>
-                    <img class="img-fluid img-people" src="./img/people/ladygaga.jpg" alt="Lady Gaga">
-                    <h6 class="container-people__name text-center">Lady Gaga</h6>
-                </div>
-                <div>
-                    <img class="img-fluid img-people" src="./img/people/alanturing.jpg" alt="Alan Turing">
-                    <h6 class="container-people__name text-center">Alan Turing</h6>
-                </div>
-                <div>
-                    <img class="img-fluid img-people" src="./img/people/nelsonmandela.jpg" alt="Nelson Mandela">
-                    <h6 class="container-people__name text-center">Nelson Mandela</h6>
-                </div>
-                <div>
-                    <img class="img-fluid img-people" src="./img/people/marylou.jpeg" alt="Mary Lou">
-                    <h6 class="container-people__name text-center">Mary Lou</h6>
-                </div>
-                <div>
-                    <img class="img-fluid img-people" src="./img/people/johnsteinbeck.jpg" alt="John Steinbeck">
-                    <h6 class="container-people__name text-center">John Steinbeck</h6>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section-footer text-center" data-language="contentPhrases">
-            Nobody hopes that you know everything, only amuse yourself and never stop learning. <br />
-            The real growth comes when we leave our zone of comfort.
-        </section>
-
-        <script src="./js/canvas.js"></script>
-        <script src="./js/main.js"></script>
-        
-    </body>
+  <body>
+    <div class="container">
+      <h6 class="subtitle">
+        Oops... this page is under construction. I'm working hard to finish it
+      </h6>
+      <h1 class="title">404</h1>
+      <a href="mailto:henryacz7@gmail.com" class="link">send me an email</a>
+    </div>
+  </body>
+  <script src="./index.js"></script>
 </html>
