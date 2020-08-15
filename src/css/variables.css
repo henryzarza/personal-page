@@ -1,0 +1,12 @@
+:root {
+  --content-width: 75rem;
+  --quick-transition-duration: 200ms;
+  --transition-duration: 290ms;
+  --transition-function: cubic-bezier(0.79, 0.01, 0.38, 0.99);
+}
+
+/* Colors */
+:root {
+  --cod-gray: #191919;
+  --wild-sand: #F5F5F5;
+}
