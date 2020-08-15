@@ -1,4 +1,32 @@
-.link {
-  color: #61DAFB;
-  margin-top: 1rem;
+.container {
+  background: var(--wild-sand) url('../../assets/medellin.png') no-repeat center / cover;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.header {
+  animation: fadeInUp var(--quick-transition-duration) var(--transition-function) 500ms forwards;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  margin: 0 auto;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 37vh;
+  transform: translateY(50%);
+  user-select: none;
+  width: fit-content;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
