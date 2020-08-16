@@ -6,7 +6,6 @@
 }
 
 .link > svg {
-  transition: fill var(--quick-transition-duration) var(--transition-function);
   width: 100%;
 }
 
