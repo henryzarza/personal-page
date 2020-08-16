@@ -4,6 +4,7 @@ import i18next from 'i18next';
 import RadioBtnLng from './components/RadioBtnLng';
 import Main from './sections/Main';
 import WhoIAm from './sections/WhoIAm';
+import WhatICanDo from './sections/WhatICanDo';
 import { LANGUAGES } from './constants';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <main className='main-content'>
         <Main />
         <WhoIAm />
+        <WhatICanDo />
       </main>
     </>
   );

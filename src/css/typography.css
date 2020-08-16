@@ -49,13 +49,17 @@
   text-align: center;
 }
 
+.white {
+  color: var(--white);
+}
+
 @media screen and (max-width: 40rem) {
   .title {
     font-size: 2.5rem;
   }
 
   .small-title {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 
   .big-text {
