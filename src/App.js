@@ -3,6 +3,7 @@ import i18next from 'i18next';
 
 import RadioBtnLng from './components/RadioBtnLng';
 import Main from './sections/Main';
+import WhoIAm from './sections/WhoIAm';
 import { LANGUAGES } from './constants';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <RadioBtnLng currentLng={currentLng} onChange={handleChange} />
       <main className='main-content'>
         <Main />
+        <WhoIAm />
       </main>
     </>
   );
