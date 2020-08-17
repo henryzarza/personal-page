@@ -23,7 +23,11 @@ i18next.addResources('en', 'MAIN', {
   WHAT_I_CAN_DO_8:
     'Relational Database management system as <strong>PostgreSQL, MySQL, Oracle 10g - 11g</strong> using <strong>PL/SQL</strong>, <strong>SQL Server</strong> using <strong>Transact SQL.</strong>',
   WHAT_I_CAN_DO_9:
-    '<strong>PHP</strong> using some frameworks like <strong>Yii 2, Laravel, and Lumen.</strong>'
+    '<strong>PHP</strong> using some frameworks like <strong>Yii 2, Laravel, and Lumen.</strong>',
+  PROJECTS_TITLE: 'Personal projects',
+  PROJECTS_DESCRIPTION:
+    'These are not all the projects in where I’ve participated and done (for confidentiality and privacy of information I can’t show it all). Many of the following projects are small due to my goal is to learn and test libraries, frameworks, tools, and other things.',
+  WATCH_MORE: 'Watch project'
 });
 
 i18next.addResources('it', 'MAIN', {
