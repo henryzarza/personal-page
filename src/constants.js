@@ -14,3 +14,5 @@ export const WHAT_CAN_I_DO = [
   'WHAT_I_CAN_DO_8',
   'WHAT_I_CAN_DO_9'
 ];
+
+export const BACKEND_URL = 'https://private-a65849-personalpage1.apiary-mock.com/';
