@@ -23,7 +23,7 @@ function WhiteCard({ className, data, classContainer }) {
           rel='external'
           className={`base-text fw-bold white text-center ${styles.link}`}
         >
-          {i18next.t('MAIN:WATCH_MORE')}
+          {i18next.t('MAIN:WATCH_PROJECT')}
         </a>
       </div>
     </li>
