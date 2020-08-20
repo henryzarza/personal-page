@@ -29,15 +29,3 @@
   text-decoration: underline;
   transform: scale(0.98);
 }
-
-.container {
-  opacity: 0;
-  transform: translateY(10%);
-  transition: all var(--transition-duration) var(--transition-function);
-  z-index: 1;
-}
-
-.container.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
