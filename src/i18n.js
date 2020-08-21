@@ -32,7 +32,21 @@ i18next.addResources('en', 'MAIN', {
   CHALLENGES_DESCRIPTION:
     'I decided to do this challenge to practice, improve, and learn new things about HTML, CSS, JavaScript, Web APIs, and between other things. It’s a challenge for me due I must think “out of the box” and take advantage of my creativity.',
   WATCH_MORE: 'Watch more',
-  DAY: 'Day {{number}} -'
+  DAY: 'Day {{number}} -',
+  INSPIRATION_TITLE: 'Inspiration',
+  INSPIRATION_DESCRIPTION:
+    'Sometimes is difficult to find the inspiration or good tools, photos, etc, for using when we wanna do something, so I wanna share with you some links that for me are very useful.',
+  INSPIRATION_FOOTER:
+    "If you know more links, please don't hesitate to share it, I'll be really grateful.",
+  INSPIRATION_DESIGN: 'Design',
+  INSPIRATION_COLORS: 'Colors',
+  INSPIRATION_PICTURES: 'Pictures',
+  INSPIRATION_DEVELOPMENT: 'Development',
+  FOOTER_TITLE_1:
+    '“Nobody hopes that you know everything, only amuse yourself and never stop learning.”',
+  FOOTER_TITLE_2: '“The real growth comes when we leave our zone of comfort.”',
+  MADE_TEXT: 'Made with',
+  MADE_BY: 'by Henry Zarza, 2020'
 });
 
 i18next.addResources('it', 'MAIN', {

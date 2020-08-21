@@ -37,6 +37,10 @@
   font-weight: 700;
 }
 
+.fw-medium {
+  font-weight: 500;
+}
+
 .fw-normal {
   font-weight: 400;
 }
