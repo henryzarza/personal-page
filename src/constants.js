@@ -105,3 +105,14 @@ export const INSPIRATION_CARDS = [
     ]
   }
 ];
+
+export const buildThresholdList = (steps) => {
+  const thresholds = [0];
+
+  for (let i = 1.0; i <= steps; i++) {
+    const ratio = i / steps;
+    thresholds.push(ratio);
+  }
+
+  return thresholds;
+};
