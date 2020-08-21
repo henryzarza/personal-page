@@ -7,6 +7,8 @@ import WhoIAm from './sections/WhoIAm';
 import WhatICanDo from './sections/WhatICanDo';
 import Projects from './sections/Projects';
 import Challenges from './sections/Challenges';
+import Inspiration from './sections/Inspiration';
+import Footer from './sections/Footer';
 import { LANGUAGES } from './constants';
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
         <WhatICanDo />
         <Projects />
         <Challenges />
+        <Inspiration />
+        <Footer />
       </main>
     </>
   );
