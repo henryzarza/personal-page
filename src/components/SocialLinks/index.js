@@ -1,4 +1,5 @@
 import React from 'react';
+import { string } from 'prop-types';
 
 import { ReactComponent as Github } from '../../assets/github-logo.svg';
 import { ReactComponent as LinkedIn } from '../../assets/linkedin.svg';
@@ -6,9 +7,9 @@ import { ReactComponent as CodePen } from '../../assets/codepen.svg';
 import { ReactComponent as Twitter } from '../../assets/twitter.svg';
 import styles from './styles.module.css';
 
-function SocialLinks() {
+function SocialLinks({ classNameContainer }) {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${classNameContainer}`}>
       <a className={styles.link} href='https://github.com/henryzarza' target='blank' rel='author'>
         <Github aria-label='Github' />
       </a>
@@ -29,5 +30,9 @@ function SocialLinks() {
     </div>
   );
 }
+
+SocialLinks.propTypes = {
+  classNameContainer: string
+};
 
 export default SocialLinks;
