@@ -1,0 +1,22 @@
+:root {
+  --content-width: 75rem;
+  --quick-transition-duration: 200ms;
+  --transition-duration: 290ms;
+  --transition-function: cubic-bezier(0.79, 0.01, 0.38, 0.99);
+}
+
+/* Colors */
+:root {
+  --bismark: #385264;
+  --cod-gray: #191919;
+  --gray-nurse: #EBEEE9;
+  --green-kelp: #2A3720;
+  --silver-tree: #71B69D;
+  --skeptica: #C9E5D9;
+  --thunder: #1D1A1D;
+  --tom-thumb: #40593F;
+  --wheatfield: #F4F0D2;
+  --white: #FFF;
+  --wild-sand: #F5F5F5;
+  --woodsmoke: #171D1D;
+}

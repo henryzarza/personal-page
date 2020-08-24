@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(4, 1.6rem);
+  margin: 0 auto;
+}
+
+.link > svg {
+  width: 100%;
+}
+
+.link > svg path {
+  transition: fill var(--quick-transition-duration) var(--transition-function);
+}
+
+.link:hover > svg path,
+.link:focus > svg path {
+  fill: var(--bismark);
+}
