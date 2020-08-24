@@ -1,0 +1,19 @@
+.img {
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.container {
+  background-color: var(--thunder);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  transition: all var(--transition-duration) var(--transition-function);
+  width: 100%;
+}
+
+.container:hover,
+.container:active,
+.container:focus {
+  transform: scale(1.01);
+}

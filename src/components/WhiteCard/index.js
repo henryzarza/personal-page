@@ -2,17 +2,11 @@ import React from 'react';
 import { string, shape, number } from 'prop-types';
 import i18next from 'i18next';
 
-import { useIsInView } from '../../utils';
 import styles from './styles.module.css';
 
 function WhiteCard({ className, data, classContainer }) {
-  const [refContainer, isIntersecting] = useIsInView('-200px');
-
   return (
-    <li
-      ref={refContainer}
-      className={`${classContainer} ${styles.container} ${isIntersecting ? styles.visible : null}`}
-    >
+    <li className={classContainer}>
       <div className={className} data-year={data.year}>
         <h6 className={`big-text fw-bold ${styles.title}`}>{data.title}</h6>
         <p className={`base-text ${styles.paragraph}`}>{data.description}</p>
@@ -23,7 +17,7 @@ function WhiteCard({ className, data, classContainer }) {
           rel='external'
           className={`base-text fw-bold white text-center ${styles.link}`}
         >
-          {i18next.t('MAIN:WATCH_MORE')}
+          {i18next.t('MAIN:WATCH_PROJECT')}
         </a>
       </div>
     </li>

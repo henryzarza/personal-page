@@ -27,7 +27,12 @@ i18next.addResources('en', 'MAIN', {
   PROJECTS_TITLE: 'Personal projects',
   PROJECTS_DESCRIPTION:
     'These are not all the projects in where I’ve participated and done (for confidentiality and privacy of information I can’t show it all). Many of the following projects are small due to my goal is to learn and test libraries, frameworks, tools, and other things.',
-  WATCH_MORE: 'Watch project'
+  WATCH_PROJECT: 'Watch project',
+  CHALLENGES_TITLE: '#30DaysOfCode',
+  CHALLENGES_DESCRIPTION:
+    'I decided to do this challenge to practice, improve, and learn new things about HTML, CSS, JavaScript, Web APIs, and between other things. It’s a challenge for me due I must think “out of the box” and take advantage of my creativity.',
+  WATCH_MORE: 'Watch more',
+  DAY: 'Day {{number}} -'
 });
 
 i18next.addResources('it', 'MAIN', {

@@ -16,3 +16,5 @@ export const WHAT_CAN_I_DO = [
 ];
 
 export const BACKEND_URL = 'https://private-a65849-personalpage1.apiary-mock.com/';
+
+export const CHALLENGES_REG_PER_PAGE = 6;
