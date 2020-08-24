@@ -8,7 +8,7 @@ function Main() {
     <section className={styles.container}>
       <header className={`text-center ${styles.header}`}>
         <h1 className={`title ${styles.title}`}>{i18next.t('MAIN:NAME')}</h1>
-        <h3 className='small-title'>{i18next.t('MAIN:PROFESSION')}</h3>
+        <h3 className='small-title fw-normal'>{i18next.t('MAIN:PROFESSION')}</h3>
       </header>
     </section>
   );
