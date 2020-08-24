@@ -5,6 +5,7 @@ import RadioBtnLng from './components/RadioBtnLng';
 import Main from './sections/Main';
 import WhoIAm from './sections/WhoIAm';
 import WhatICanDo from './sections/WhatICanDo';
+import Projects from './sections/Projects';
 import { LANGUAGES } from './constants';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Main />
         <WhoIAm />
         <WhatICanDo />
+        <Projects />
       </main>
     </>
   );
