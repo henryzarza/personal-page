@@ -5,7 +5,7 @@ import { buildThresholdList } from '../../constants';
 import styles from './styles.module.css';
 
 function Main() {
-  const refContainer = useRef();
+  const refTitle = useRef();
   const refInteraction = useRef();
 
   useEffect(() => {
@@ -14,7 +14,7 @@ function Main() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         const ratio = entry.intersectionRatio.toFixed(2);
-        refContainer.current.style.setProperty('--intersection', ratio);
+        refTitle.current.style.transform = `translate3d(0, ${ratio * 150}%, 0)`;
       },
       { threshold: buildThresholdList(100) }
     );
@@ -26,8 +26,8 @@ function Main() {
   }, []);
 
   return (
-    <section ref={refContainer} className={styles.container}>
-      <header className={`text-center ${styles.header}`}>
+    <section className={styles.container}>
+      <header ref={refTitle} className={`text-center ${styles.header}`}>
         <h1 className={`title ${styles.title}`}>{i18next.t('MAIN:NAME')}</h1>
         <h3 className='small-title fw-normal'>{i18next.t('MAIN:PROFESSION')}</h3>
       </header>
