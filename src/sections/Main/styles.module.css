@@ -1,5 +1,5 @@
 .container {
-  background: var(--wild-sand) url('../../assets/medellin_3.png') no-repeat center / cover;
+  background: var(--wild-sand) url('../../assets/medellin.png') no-repeat center / cover;
   min-height: 100vh;
   position: relative;
   width: 100%;
@@ -19,22 +19,14 @@
   will-change: transform;
 }
 
-.parallax {
+.mountain {
   background: no-repeat center / cover;
+  background-image: url('../../assets/mountains.png');
   bottom: 0;
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
-}
-
-.tree {
-  background-image: url('../../assets/medellin_1.png');
-  z-index: 2;
-}
-
-.mountain {
-  background-image: url('../../assets/medellin_2.png');
   z-index: 1;
 }
 

@@ -31,8 +31,7 @@ function Main() {
         <h1 className={`title ${styles.title}`}>{i18next.t('MAIN:NAME')}</h1>
         <h3 className='small-title fw-normal'>{i18next.t('MAIN:PROFESSION')}</h3>
       </header>
-      <div className={`${styles.parallax} ${styles.tree}`} />
-      <div className={`${styles.parallax} ${styles.mountain}`} />
+      <div className={styles.mountain} />
       <div ref={refInteraction} className={styles.interaction} />
     </section>
   );
