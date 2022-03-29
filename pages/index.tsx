@@ -5,6 +5,7 @@ import { useState, useCallback } from "react";
 
 import RadioBtnLng from "../components/RadioBtnLng";
 import Main from "../sections/Main";
+import WhoIAm from "../sections/WhoIAm";
 import { LANGUAGES } from "../constants";
 
 const Home: NextPage = () => {
@@ -31,7 +32,8 @@ const Home: NextPage = () => {
       <RadioBtnLng currentLng={currentLng} onChange={handleChange} />
       <main className="main-content">
         <Main />
-        {/* <WhoIAm />
+        <WhoIAm />
+        {/*
         <WhatICanDo />
         <Projects />
         <Challenges />

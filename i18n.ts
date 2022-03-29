@@ -10,8 +10,8 @@ i18next.addResources('en', 'MAIN', {
   PROFESSION: 'Web developer',
   WHO_I_AM: 'Who am I?',
   WHO_I_AM_TEXT:
-    'Hello there! My name is Henry, I’m a system engineer from Medellín (Colombia), I’m considered to myself as dedicated and passionate about what I like, I love to push my limits every day and face new challenges. I like reading, sharing my knowledge, learning new things, languages, watching series, music, walking, rollerblading, swimming, meditation, and practicing yoga. Right now, I’m studying English and Italian, as well as improving my knowledge in web development.',
-  KEEP_TOUCH: 'Let’s keep in touch:',
+    "Hello there! My name is Henry, I'm a system engineer from Medellín (Colombia), I'm considered to myself as dedicated about what I like, I love to push my limits and face new challenges, reading, sharing my knowledge, learning new things, languages, music, walking, rollerblading, swimming, and meditation. Currently, I'm studying English and Italian, as well as improving my knowledge in web development. I'm one of the coorganizers of <strong>MedellinCSS</strong> community.",
+  KEEP_TOUCH: "Let's keep in touch:",
   WHAT_I_CAN_DO_TITLE: 'What can I do?',
   WHAT_I_CAN_DO_1:
     '<strong>JavaScript</strong> using some <strong>Web APIs, Service worker, web workers</strong>. Right now, I am learning <strong>VueJS</strong> framework.',
@@ -57,9 +57,9 @@ i18next.addResources('en', 'MAIN', {
 i18next.addResources('it', 'MAIN', {
   NAME: 'Henry Zarza',
   PROFESSION: 'Web developer',
-  WHO_I_AM: 'Chi Sono?',
+  WHO_I_AM: 'Chi sono?',
   WHO_I_AM_TEXT:
-    "Ehilà! Mi chiamo Henry, sono un ingegnere di sistema di Medellín (Colombia), sono considerato a me stesso come dedicato e appassionato di ciò che mi piace, amo spingere i miei limiti ogni giorno e affrontare nuove sfide. Mi piace leggere, condividere le mie conoscenze, imparare nuove cose, lingue, guardare serie, musica, camminare, pattinare, nuotare, meditare e praticare yoga. In questo momento sto studiando l'inglese e l'italiano, oltre a migliorare le mie conoscenze nello sviluppo del web.",
+    "Ciao! Mi chiamo Henry, sono un ingegnere di sistema di Medellín (Colombia), sono considerato a me stesso come dedicato di ciò che mi piace, amo spingere i miei limiti e affrontare nuove sfide, leggere, condividere le mie conoscenze, imparare nuove cose, lingue, musica, camminare, pattinare, nuotare, e meditare. Sto studiando l'inglese e l'italiano, oltre a migliorare le mie conoscenze nello web development. Sono parte di <strong>MedellinCSS</strong> comunità.",
   KEEP_TOUCH: 'Teniamoci in contatto:',
   WHAT_I_CAN_DO_TITLE: 'Cosa posso fare?',
   WHAT_I_CAN_DO_1:
