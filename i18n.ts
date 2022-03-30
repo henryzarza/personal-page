@@ -10,7 +10,7 @@ i18next.addResources('en', 'MAIN', {
   PROFESSION: 'Web developer',
   WHO_I_AM: 'Who am I?',
   WHO_I_AM_TEXT:
-    "Hello there! My name is Henry, I'm a system engineer from Medellín (Colombia), I'm considered to myself as dedicated about what I like, I love to push my limits and face new challenges, reading, sharing my knowledge, learning new things, languages, music, walking, rollerblading, swimming, and meditation. Currently, I'm studying English and Italian, as well as improving my knowledge in web development. I'm one of the coorganizers of <strong>MedellinCSS</strong> community.",
+    "Hello there! My name is Henry, I'm a system engineer from Medellín (Colombia), I'm considered myself dedicated about what I like, I love to push my limits and face new challenges, reading, sharing my knowledge, learning new things, languages, music, walking, rollerblading, swimming, and meditation. Currently, I'm studying English and Italian, as well as improving my knowledge in web development. I'm one of the coorganizers of <strong>MedellinCSS</strong> community.",
   KEEP_TOUCH: "Let's keep in touch:",
   WHAT_I_CAN_DO_TITLE: 'What can I do?',
   WHAT_I_CAN_DO_1:
