@@ -6,6 +6,8 @@ import { useState, useCallback } from "react";
 import RadioBtnLng from "../components/RadioBtnLng";
 import Main from "../sections/Main";
 import WhoIAm from "../sections/WhoIAm";
+import WhatCanIDo from "../sections/WhatCanIDo";
+import Projects from "../sections/Projects";
 import { LANGUAGES } from "../constants";
 
 const Home: NextPage = () => {
@@ -33,9 +35,9 @@ const Home: NextPage = () => {
       <main className="main-content">
         <Main />
         <WhoIAm />
-        {/*
-        <WhatICanDo />
+        <WhatCanIDo />
         <Projects />
+        {/*
         <Challenges />
         <Inspiration />
         <Footer /> */}
