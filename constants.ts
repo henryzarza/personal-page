@@ -4,15 +4,15 @@ export const LANGUAGES = {
 };
 
 export const WHAT_CAN_I_DO_TEXTS = [
-  'WHAT_I_CAN_DO_1',
-  'WHAT_I_CAN_DO_2',
-  'WHAT_I_CAN_DO_3',
-  'WHAT_I_CAN_DO_4',
-  'WHAT_I_CAN_DO_5',
-  'WHAT_I_CAN_DO_6',
-  'WHAT_I_CAN_DO_7',
-  'WHAT_I_CAN_DO_8',
-  'WHAT_I_CAN_DO_9'
+  'WHAT_CAN_I_DO_1',
+  'WHAT_CAN_I_DO_2',
+  'WHAT_CAN_I_DO_3',
+  'WHAT_CAN_I_DO_4',
+  'WHAT_CAN_I_DO_5',
+  'WHAT_CAN_I_DO_6',
+  'WHAT_CAN_I_DO_7',
+  'WHAT_CAN_I_DO_8',
+  'WHAT_CAN_I_DO_9'
 ];
 
 export const BACKEND_URL = 'https://private-a65849-personalpage1.apiary-mock.com/';
