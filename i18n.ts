@@ -32,25 +32,25 @@ i18next.addResources('en', 'MAIN', {
   PROJECTS_DESCRIPTION:
     "These are not all the projects in where I've participated and done (for confidentiality and privacy of information I can't show it all). Many of the following projects are small because my goal is learning and testing libraries, frameworks, tools, and other things.",
   SEE_PROJECT: "See project",
-  CHALLENGES_TITLE: '#30DaysOfCode',
+  CHALLENGES_TITLE: "#30DaysOfCrativeCode",
   CHALLENGES_DESCRIPTION:
-    'I decided to do this challenge to practice, improve, and learn new things about HTML, CSS, JavaScript, Web APIs, and between other things. It’s a challenge for me due I have to think “out of the box” and take advantage of my creativity.',
-  WATCH_MORE: 'See more',
-  DAY: 'Day {{number}} -',
-  INSPIRATION_TITLE: 'Inspiration',
+    "I decided to do this challenge to practice, improve, and learn new things about HTML, CSS, JavaScript, Web APIs, and between other things. It was a challenge for me because I had to think “out of the box”.",
+  WATCH_MORE: "See more",
+  DAY: "Day {{number}} -",
+  INSPIRATION_TITLE: "Inspiration",
   INSPIRATION_DESCRIPTION:
-    'Sometimes it is difficult to find the inspiration or good tools, photos, etc, for using when we wanna do something, so I wanna share with you some links that for me are very useful.',
+    "Sometimes it is difficult to find the inspiration or good tools, photos, etc, for using when we wanna do something, so I wanna share with you some links that for me are very useful.",
   INSPIRATION_FOOTER:
     "If you know more links, please don't hesitate to share it, I'll be really grateful.",
-  INSPIRATION_DESIGN: 'Design',
-  INSPIRATION_COLORS: 'Colors',
-  INSPIRATION_PICTURES: 'Pictures',
-  INSPIRATION_DEVELOPMENT: 'Development',
+  INSPIRATION_DESIGN: "Design",
+  INSPIRATION_COLORS: "Colors",
+  INSPIRATION_PICTURES: "Pictures",
+  INSPIRATION_DEVELOPMENT: "Development",
   FOOTER_TITLE_1:
     '“Nobody hopes you know everything, only amuse yourself and never stop learning.”',
   FOOTER_TITLE_2: '“The real growth comes when we leave our zone of comfort.”',
-  MADE_TEXT: 'Made with',
-  MADE_BY: 'by Henry Zarza, 2020'
+  MADE_TEXT: "Made with",
+  MADE_BY: "by Henry Zarza, 2022"
 });
 
 i18next.addResources('it', 'MAIN', {
@@ -81,22 +81,22 @@ i18next.addResources('it', 'MAIN', {
   PROJECTS_DESCRIPTION:
     "Questi non sono tutti i progetti in cui ho partecipato e realizzato (per la riservatezza e la privacy delle informazioni non posso mostrarle tutte). Molti dei seguenti progetti sono piccoli, perché il mio obiettivo è quello di imparare e testare biblioteche, frameworks, strumenti e altre cose.",
   SEE_PROJECT: "Guarda progetto",
-  CHALLENGES_TITLE: '#30DaysOfCode',
+  CHALLENGES_TITLE: "#30DaysOfCrativeCode",
   CHALLENGES_DESCRIPTION:
-    'Ho deciso di fare questa sfida per fare pratica, migliorare e imparare nuove cose su HTML, CSS, JavaScript, API Web e tra le altre cose. È una sfida per me dovuta al fatto che devo pensare "fuori dagli schemi" e sfruttare la mia creatività.',
-  WATCH_MORE: 'Guarda di più',
-  DAY: 'Giorno {{number}} -',
-  INSPIRATION_TITLE: 'Ispirazione',
+    "Ho deciso di fare questa sfida per fare pratica, migliorare e imparare nuove cose su HTML, CSS, JavaScript, API Web e altre cose. È una sfida per me dovuta al fatto che devo pensare “fuori dagli schemi“.",
+  WATCH_MORE: "Guarda di più",
+  DAY: "Giorno {{number}} -",
+  INSPIRATION_TITLE: "Ispirazione",
   INSPIRATION_DESCRIPTION:
     "A volte è difficile trovare l'ispirazione o buoni strumenti, foto, ecc, da usare quando vogliamo fare qualcosa, quindi voglio condividere con voi alcuni link che per me sono molto utili.",
-  INSPIRATION_FOOTER: 'Se conoscete altri link, non esitate a condividerli, ve ne sarò molto grato',
-  INSPIRATION_DESIGN: 'Progettazione',
-  INSPIRATION_COLORS: 'Colori',
-  INSPIRATION_PICTURES: 'Immagini',
-  INSPIRATION_DEVELOPMENT: 'Sviluppo',
+  INSPIRATION_FOOTER: "Se conoscete altri link, non esitate a condividerli, ve ne sarò molto grato",
+  INSPIRATION_DESIGN: "Progettazione",
+  INSPIRATION_COLORS: "Colori",
+  INSPIRATION_PICTURES: "Immagini",
+  INSPIRATION_DEVELOPMENT: "Sviluppo",
   FOOTER_TITLE_1:
     '“Nessuno spera che tu sappia tutto, solo che ti diverti e non smetti mai di imparare.”',
   FOOTER_TITLE_2: '“La vera crescita arriva quando lasciamo la nostra zona di comfort.”',
-  MADE_TEXT: 'Fatto con',
-  MADE_BY: 'da Henry Zarza, 2020'
+  MADE_TEXT: "Fatto con",
+  MADE_BY: "da Henry Zarza, 2022"
 });
