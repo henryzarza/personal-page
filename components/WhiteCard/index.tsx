@@ -24,7 +24,7 @@ function WhiteCard({ className, data, classContainer } : WhiteCardProps) {
         <h6 className={`big-text fw-bold ${styles.title}`}>{data.title}</h6>
         <p className={`base-text ${styles.paragraph}`}>{data.description}</p>
         <Image className={styles.img} src={data.image} alt={data.title} width={360} height={190} />
-        <Link href={data.link}>
+        <Link href={data.link} passHref>
           <a
             target="blank"
             rel="external"
