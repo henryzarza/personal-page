@@ -8,6 +8,7 @@ import Main from "../sections/Main";
 import WhoIAm from "../sections/WhoIAm";
 import WhatCanIDo from "../sections/WhatCanIDo";
 import Projects from "../sections/Projects";
+import Challenges from "../sections/Challenges";
 import { LANGUAGES } from "../constants";
 
 const Home: NextPage = () => {
@@ -37,8 +38,8 @@ const Home: NextPage = () => {
         <WhoIAm />
         <WhatCanIDo />
         <Projects />
-        {/*
         <Challenges />
+        {/*
         <Inspiration />
         <Footer /> */}
       </main>
