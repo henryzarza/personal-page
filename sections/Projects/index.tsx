@@ -1,19 +1,9 @@
-import { useEffect, useState } from "react";
 import i18next from "i18next";
 
 import WhiteCard, { WhiteCardProps } from "../../components/WhiteCard";
-import { BACKEND_URL } from "../../constants";
 import styles from "./styles.module.css";
 
-function Projects() {
-  const [projects, setProjects] = useState<Array<WhiteCardProps["data"]>>();
-
-  useEffect(() => {
-    fetch(`${BACKEND_URL}projects`)
-      .then((response) => response.json())
-      .then((data) => setProjects(data));
-  }, []);
-
+function Projects({ projects } : { projects: Array<WhiteCardProps["data"]> }) {
   return (
     <section className={styles.container}>
       <h2 className={`small-title ${styles.title}`}>{i18next.t("MAIN:PROJECTS_TITLE")}</h2>

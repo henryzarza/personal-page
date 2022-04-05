@@ -1,29 +1,19 @@
-import { useEffect, useState, useCallback } from "react";
+import { useState, useCallback } from "react";
 import i18next from "i18next";
 
 import BlackCard, { BlackCardProps } from "../../components/BlackCard";
-import { BACKEND_URL, REGISTER_PER_PAGE } from "../../constants";
+import { REGISTER_PER_PAGE } from "../../constants";
 import styles from "./styles.module.css";
 
-function Challenges() {
-  const [challenges, setChallenges] = useState<Array<BlackCardProps['data']>>();
-  const [endIndex, setEndIndex] = useState(0);
-
-  useEffect(() => {
-    fetch(`${BACKEND_URL}challenges`)
-      .then((response) => response.json())
-      .then((data) => {
-        setChallenges(data);
-        setEndIndex(data.length < REGISTER_PER_PAGE ? data.length : REGISTER_PER_PAGE);
-      });
-  }, []);
+function Challenges({ data } : { data: Array<BlackCardProps['data']> }) {
+  const [endIndex, setEndIndex] = useState(data.length < REGISTER_PER_PAGE ? data.length : REGISTER_PER_PAGE);
 
   const handleClick = useCallback(() => {
-    if (challenges) {
+    if (data) {
       const regPerPage = endIndex + REGISTER_PER_PAGE;
-      setEndIndex(challenges.length < regPerPage ? challenges.length : regPerPage);
+      setEndIndex(data.length < regPerPage ? data.length : regPerPage);
     }
-  }, [challenges, endIndex]);
+  }, [data, endIndex]);
 
   return (
     <section className={styles.container}>
@@ -31,14 +21,14 @@ function Challenges() {
       <p className={`base-text white ${styles.paragraph}`}>
         {i18next.t("MAIN:CHALLENGES_DESCRIPTION")}
       </p>
-      {!!challenges && (
+      {!!data && (
         <>
           <div className={styles["link-container"]}>
-            {challenges.slice(0, endIndex).map((el) => (
+            {data.slice(0, endIndex).map((el) => (
               <BlackCard key={el.id} data={el} />
             ))}
           </div>
-          {endIndex < challenges.length && (
+          {endIndex < data.length && (
             <button
               type="button"
               className={`white big-text text-center ${styles.button}`}

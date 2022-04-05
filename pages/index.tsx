@@ -1,17 +1,23 @@
 import i18next from "i18next";
-import type { NextPage } from "next";
+import { InferGetStaticPropsType } from "next";
 import Head from "next/head";
 import { useState, useCallback } from "react";
 
 import RadioBtnLng from "../components/RadioBtnLng";
+import { BlackCardProps } from "../components/BlackCard";
+import { WhiteCardProps } from "../components/WhiteCard";
+
 import Main from "../sections/Main";
 import WhoIAm from "../sections/WhoIAm";
 import WhatCanIDo from "../sections/WhatCanIDo";
 import Projects from "../sections/Projects";
 import Challenges from "../sections/Challenges";
-import { LANGUAGES } from "../constants";
+import Random from "../sections/Random";
+import Inspiration from "../sections/Inspiration";
+import Footer from "../sections/Footer";
+import { LANGUAGES, BACKEND_URL } from "../constants";
 
-const Home: NextPage = () => {
+const Home = ({ challenges, projects } : InferGetStaticPropsType<typeof getStaticProps>) => {
   const [currentLng, setCurrentLng] = useState(LANGUAGES.EN);
 
   const handleChange = useCallback((e) => {
@@ -37,14 +43,30 @@ const Home: NextPage = () => {
         <Main />
         <WhoIAm />
         <WhatCanIDo />
-        <Projects />
-        <Challenges />
-        {/*
+        {projects && <Projects projects={projects} />}
+        {challenges && <Challenges data={challenges} />}
+        <Random />
         <Inspiration />
-        <Footer /> */}
+        <Footer />
       </main>
     </>
   )
+}
+
+export const getStaticProps = async () => {
+  // projects
+  const resProjects = await fetch(`${BACKEND_URL}projects`);
+  const projects: WhiteCardProps['data'][] = await resProjects.json();
+  // challenges
+  const res = await fetch(`${BACKEND_URL}challenges`);
+  const challenges: BlackCardProps['data'][] = await res.json();
+
+  return {
+    props: {
+      challenges,
+      projects
+    }
+  }
 }
 
 export default Home;
