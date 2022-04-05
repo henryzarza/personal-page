@@ -17,7 +17,7 @@
 .inner-content {
   align-items: center;
   display: grid;
-  grid-gap: 6.5rem;
+  gap: 6.5rem;
   grid-template-columns: minmax(13.9rem, 21.9rem) minmax(22rem, 30rem);
 }
 
@@ -44,7 +44,7 @@
   }
 
   .inner-content {
-    grid-gap: 1rem;
+    gap: 1rem;
     grid-template-columns: 1fr;
     justify-items: center;
   }
