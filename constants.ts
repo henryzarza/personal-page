@@ -42,6 +42,31 @@ export const INSPIRATION_CARDS = [
     ]
   },
   {
+    title: 'INSPIRATION_DEVELOPMENT',
+    links: [
+      {
+        text: 'Free frontend',
+        link: 'https://freefrontend.com/'
+      },
+      {
+        text: 'Github web sites',
+        link: 'https://github.com/sdmg15/Best-websites-a-programmer-should-visit'
+      },
+      {
+        text: 'Tympanus',
+        link: 'https://tympanus.net/'
+      },
+      {
+        text: 'Code talks',
+        link: 'https://codetalks.tv/'
+      },
+      {
+        text: 'CSS vocabs',
+        link: 'http://apps.workflower.fi/vocabs/css/en'
+      }
+    ]
+  },
+  {
     title: 'INSPIRATION_COLORS',
     links: [
       {
@@ -80,27 +105,48 @@ export const INSPIRATION_CARDS = [
     ]
   },
   {
-    title: 'INSPIRATION_DEVELOPMENT',
+    title: 'INSPIRATION_CAREER',
     links: [
       {
-        text: 'Free frontend',
-        link: 'https://freefrontend.com/'
+        text: 'Roadmap',
+        link: 'https://roadmap.sh/'
       },
       {
-        text: 'Github web sites',
-        link: 'https://github.com/sdmg15/Best-websites-a-programmer-should-visit'
+        text: 'Codrops',
+        link: 'https://tympanus.net/codrops/css_reference/'
       },
       {
-        text: 'Tympanus',
-        link: 'https://tympanus.net/'
+        text: '30 seconds of code',
+        link: 'https://www.30secondsofcode.org/'
       },
       {
-        text: 'Code talks',
-        link: 'https://codetalks.tv/'
+        text: 'Code tidbits',
+        link: 'https://www.samanthaming.com/tidbits/'
       },
       {
-        text: 'CSS vocabs',
-        link: 'http://apps.workflower.fi/vocabs/css/en'
+        text: 'Data structures & Algorithms',
+        link: 'https://techdevguide.withgoogle.com/paths/data-structures-and-algorithms/'
+      }
+    ]
+  },
+  {
+    title: 'INSPIRATION_TRIPS',
+    links: [
+      {
+        text: 'Nomadlist',
+        link: 'https://nomadlist.com/'
+      },
+      {
+        text: 'Numbeo',
+        link: 'https://www.numbeo.com/cost-of-living/'
+      },
+      {
+        text: 'Do you need visa?',
+        link: 'https://www.doyouneedvisa.com/'
+      },
+      {
+        text: 'A soft murmur',
+        link: 'https://asoftmurmur.com/'
       }
     ]
   }

@@ -37,6 +37,9 @@ i18next.addResources('en', 'MAIN', {
     "I decided to do this challenge to practice, improve, and learn new things about HTML, CSS, JavaScript, Web APIs, and between other things. It was a challenge for me because I had to think “out of the box”.",
   WATCH_MORE: "See more",
   DAY: "Day {{number}} -",
+  RANDOM_TITLE: "Random things",
+  RANDOM_DESCRIPTION:
+    "Here I wanna share with you random things like articles, talks, resources, codbits, pictures, experiences, etc.",
   INSPIRATION_TITLE: "Inspiration",
   INSPIRATION_DESCRIPTION:
     "Sometimes it is difficult to find the inspiration or good tools, photos, etc, for using when we wanna do something, so I wanna share with you some links that for me are very useful.",
@@ -46,6 +49,8 @@ i18next.addResources('en', 'MAIN', {
   INSPIRATION_COLORS: "Colors",
   INSPIRATION_PICTURES: "Pictures",
   INSPIRATION_DEVELOPMENT: "Development",
+  INSPIRATION_CAREER: "Career",
+  INSPIRATION_TRIPS: "Trips",
   FOOTER_TITLE_1:
     '“Nobody hopes you know everything, only amuse yourself and never stop learning.”',
   FOOTER_TITLE_2: '“The real growth comes when we leave our zone of comfort.”',
@@ -85,6 +90,9 @@ i18next.addResources('it', 'MAIN', {
   CHALLENGES_DESCRIPTION:
     "Ho deciso di fare questa sfida per fare pratica, migliorare e imparare nuove cose su HTML, CSS, JavaScript, API Web e altre cose. È una sfida per me dovuta al fatto che devo pensare “fuori dagli schemi“.",
   WATCH_MORE: "Guarda di più",
+  RANDOM_TITLE: "Random qualcosa",
+  RANDOM_DESCRIPTION:
+    "Qui voglio condivere con te random cose come articoli, discorsi, ricorsi, codbits, immagini, esperienze, etc.",
   DAY: "Giorno {{number}} -",
   INSPIRATION_TITLE: "Ispirazione",
   INSPIRATION_DESCRIPTION:
@@ -94,6 +102,8 @@ i18next.addResources('it', 'MAIN', {
   INSPIRATION_COLORS: "Colori",
   INSPIRATION_PICTURES: "Immagini",
   INSPIRATION_DEVELOPMENT: "Sviluppo",
+  INSPIRATION_CAREER: "Carriera",
+  INSPIRATION_TRIPS: "Viaggio",
   FOOTER_TITLE_1:
     '“Nessuno spera che tu sappia tutto, solo che ti diverti e non smetti mai di imparare.”',
   FOOTER_TITLE_2: '“La vera crescita arriva quando lasciamo la nostra zona di comfort.”',
