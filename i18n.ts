@@ -35,7 +35,7 @@ i18next.addResources('en', 'MAIN', {
   CHALLENGES_TITLE: "#30DaysOfCrativeCode",
   CHALLENGES_DESCRIPTION:
     "I decided to do this challenge to practice, improve, and learn new things about HTML, CSS, JavaScript, Web APIs, and between other things. It was a challenge for me because I had to think “out of the box”.",
-  WATCH_MORE: "See more",
+  SEE_MORE: "See more",
   DAY: "Day {{number}} -",
   RANDOM_TITLE: "Random things",
   RANDOM_DESCRIPTION:
@@ -89,7 +89,7 @@ i18next.addResources('it', 'MAIN', {
   CHALLENGES_TITLE: "#30DaysOfCrativeCode",
   CHALLENGES_DESCRIPTION:
     "Ho deciso di fare questa sfida per fare pratica, migliorare e imparare nuove cose su HTML, CSS, JavaScript, API Web e altre cose. È una sfida per me dovuta al fatto che devo pensare “fuori dagli schemi“.",
-  WATCH_MORE: "Guarda di più",
+  SEE_MORE: "Guarda di più",
   RANDOM_TITLE: "Random qualcosa",
   RANDOM_DESCRIPTION:
     "Qui voglio condivere con te random cose come articoli, discorsi, ricorsi, codbits, immagini, esperienze, etc.",

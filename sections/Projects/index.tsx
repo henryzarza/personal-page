@@ -10,7 +10,7 @@ function Projects({ projects } : { projects: Array<WhiteCardProps["data"]> }) {
       <p className={`base-text ${styles.paragraph}`}>{i18next.t("MAIN:PROJECTS_DESCRIPTION")}</p>
       <ul className={styles.timeline}>
         <span className={styles.circle} />
-        {projects?.map((el) => (
+        {projects.map((el) => (
           <WhiteCard key={el.id} classContainer={styles.item} className={styles.card} data={el} />
         ))}
         <span className={styles.circle} />

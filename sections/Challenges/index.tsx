@@ -21,23 +21,19 @@ function Challenges({ data } : { data: Array<BlackCardProps['data']> }) {
       <p className={`base-text white ${styles.paragraph}`}>
         {i18next.t("MAIN:CHALLENGES_DESCRIPTION")}
       </p>
-      {!!data && (
-        <>
-          <div className={styles["link-container"]}>
-            {data.slice(0, endIndex).map((el) => (
-              <BlackCard key={el.id} data={el} />
-            ))}
-          </div>
-          {endIndex < data.length && (
-            <button
-              type="button"
-              className={`white big-text text-center ${styles.button}`}
-              onClick={handleClick}
-            >
-              {i18next.t("MAIN:WATCH_MORE")}
-            </button>
-          )}
-        </>
+      <div className={styles["link-container"]}>
+        {data.slice(0, endIndex).map((el) => (
+          <BlackCard key={el.id} data={el} />
+        ))}
+      </div>
+      {endIndex < data.length && (
+        <button
+          type="button"
+          className={`white big-text text-center ${styles.button}`}
+          onClick={handleClick}
+        >
+          {i18next.t("MAIN:SEE_MORE")}
+        </button>
       )}
     </section>
   );
