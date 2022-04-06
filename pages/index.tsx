@@ -6,6 +6,7 @@ import { useState, useCallback } from "react";
 import RadioBtnLng from "../components/RadioBtnLng";
 import { BlackCardProps } from "../components/BlackCard";
 import { WhiteCardProps } from "../components/WhiteCard";
+import { WhiteCardChipsProps } from "../components/WhiteCardChips";
 
 import Main from "../sections/Main";
 import WhoIAm from "../sections/WhoIAm";
@@ -17,7 +18,7 @@ import Inspiration from "../sections/Inspiration";
 import Footer from "../sections/Footer";
 import { LANGUAGES, BACKEND_URL } from "../constants";
 
-const Home = ({ challenges, projects } : InferGetStaticPropsType<typeof getStaticProps>) => {
+const Home = ({ challenges, projects, random } : InferGetStaticPropsType<typeof getStaticProps>) => {
   const [currentLng, setCurrentLng] = useState(LANGUAGES.EN);
 
   const handleChange = useCallback((e) => {
@@ -45,7 +46,7 @@ const Home = ({ challenges, projects } : InferGetStaticPropsType<typeof getStati
         <WhatCanIDo />
         {projects && <Projects projects={projects} />}
         {challenges && <Challenges data={challenges} />}
-        <Random />
+        {random && <Random data={random} />}
         <Inspiration />
         <Footer />
       </main>
@@ -60,11 +61,15 @@ export const getStaticProps = async () => {
   // challenges
   const res = await fetch(`${BACKEND_URL}challenges`);
   const challenges: BlackCardProps['data'][] = await res.json();
+  // random
+  const resRandom = await fetch(`${BACKEND_URL}random`);
+  const random: WhiteCardChipsProps['data'][] = await resRandom.json();
 
   return {
     props: {
       challenges,
-      projects
+      projects,
+      random
     }
   }
 }
