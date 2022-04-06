@@ -1,0 +1,35 @@
+.container {
+  background-color: var(--skeptica);
+  border-radius: 0.2rem;
+  display: flex;
+  padding: 0.4rem;
+  position: fixed;
+  right: 1.5rem;
+  top: 1.5rem;
+  z-index: 3;
+}
+
+.radio {
+  display: none;
+}
+
+.radio + label {
+  background: url("/assets/flag_english.png") no-repeat center / cover;
+  cursor: pointer;
+  filter: grayscale(1);
+  height: 1.25rem;
+  margin-right: 0.4rem;
+  transition: all var(--quick-transition-duration) var(--transition-function);
+  width: 1.875rem;
+}
+
+.radio:last-of-type + label {
+  background-image: url("/assets/flag_italy.png");
+  margin-right: 0;
+}
+
+.radio + label:hover,
+.radio + label.active {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 200;
+  src: url("./Rubik/Rubik-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./Rubik/Rubik-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./Rubik/Rubik-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./Rubik/Rubik-Bold.ttf") format("truetype");
+}

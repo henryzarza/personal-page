@@ -1,0 +1,34 @@
+.title {
+  margin-bottom: 1rem;
+}
+
+.paragraph {
+  margin-bottom: 1rem;
+}
+
+.img {
+  object-fit: contain;
+  object-position: center;
+}
+
+.link {
+  background: linear-gradient(90deg, var(--silver-tree) 0%, var(--tom-thumb) 100%);
+  border-radius: 0.5rem;
+  color: var(--white);
+  margin-top: 1rem;
+  padding: 1rem;
+  transition: transform var(--transition-duration) var(--transition-function);
+  width: 10.6rem;
+}
+
+.link:hover,
+.link:active,
+.link:focus {
+  text-decoration: underline;
+}
+
+.link:active,
+.link:focus {
+  color: var(--white);
+  transform: scale(0.95);
+}
