@@ -15,7 +15,12 @@
   --white: #FFFFFE;
   --gray: #E8E4E6;
 
-  --max-width: 90rem;
+  --quick-transition-duration: 200ms;
+  --transition-duration: 290ms;
+  --transition-function: cubic-bezier(0.79, 0.01, 0.38, 0.99);
+  --max-width: 75rem;
+  --border-radius: 0.1875rem;
+  --outline: 0.1rem solid var(--highlight-color);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -82,7 +87,7 @@ body {
   line-height: normal;
 }
 
-.highlighted {
+.highlighted-text {
   font-family: var(--font-gambetta);
   font-size: 1rem;
   font-style: normal;
@@ -90,9 +95,9 @@ body {
   line-height: normal;
 }
 
-.small {
+.small-text {
   font-family: var(--font-gambetta);
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -100,5 +105,13 @@ body {
 
 .fw-bold {
   font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.white {
+  color: var(--white);
 }
 /* Finish style guide */
