@@ -13,7 +13,10 @@
   transition: fill var(--quick-transition-duration) var(--transition-function);
 }
 
-.link:hover > svg path,
-.link:focus > svg path {
-  fill: var(--silver-tree);
+.link:hover > svg path {
+  fill: var(--highlight-color);
+}
+
+.link:focus > svg {
+  outline: var(--outline);
 }

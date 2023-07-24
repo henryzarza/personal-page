@@ -1,15 +1,15 @@
 .footer {
   align-items: center;
-  background-color: var(--thunder);
+  background-color: var(--tertiary-color);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 15.63rem;
-  padding: 2rem;
+  min-height: 15.625rem;
+  padding: 2rem 3rem;
 }
 
 .header {
-  margin-bottom: 2.85rem;
+  margin-bottom: 2.94rem;
   max-width: 43rem;
   width: 100%;
 }
@@ -30,11 +30,6 @@
 
 .link svg path {
   fill: var(--white);
-}
-
-.link svg:hover path,
-.link svg:focus path {
-  fill: var(--silver-tree);
 }
 
 @media only screen and (max-width: 40rem) {
