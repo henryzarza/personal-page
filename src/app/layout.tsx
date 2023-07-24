@@ -1,9 +1,19 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import localFont from 'next/font/local';
 import { Navbar, Footer } from '@/components';
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const chubbo = localFont({
+  src: './fonts/Chubbo/Chubbo-Variable.ttf',
+  display: 'swap',
+  variable: '--font-chubbo'
+});
+
+const gambetta = localFont({
+  src: './fonts/Gambetta/Gambetta-Variable.ttf',
+  display: 'swap',
+  variable: '--font-gambetta'
+});
 
 export const metadata: Metadata = {
   title: 'Henry Zarza | Software Developer',
@@ -17,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${chubbo.variable} ${gambetta.variable}`}>
         <Navbar />
         {children}
         <Footer />
