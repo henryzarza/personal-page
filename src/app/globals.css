@@ -21,6 +21,7 @@
   --max-width: 75rem;
   --border-radius: 0.1875rem;
   --outline: 0.1rem solid var(--highlight-color);
+  --separation-padding-y: 3.75rem;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -87,7 +88,8 @@ body {
   line-height: normal;
 }
 
-.highlighted-text {
+.highlighted-text,
+.link-text {
   font-family: var(--font-gambetta);
   font-size: 1rem;
   font-style: normal;
@@ -113,5 +115,19 @@ body {
 
 .white {
   color: var(--white);
+}
+
+.link-text {
+  color: var(--highlight-color);
+  text-decoration: underline;
+  transform: color var(--transition-duration) var(--transition-function);
+}
+
+.link-text:hover {
+  color: var(--primary-color);
+}
+
+.link-text:focus {
+  outline: var(--outline);
 }
 /* Finish style guide */

@@ -24,6 +24,7 @@
   bottom: 0;
   left: 0;
   position: absolute;
+  object-fit: cover;
   right: 0;
   z-index: 2;
 }
@@ -34,4 +35,10 @@
   position: absolute;
   right: 0;
   top: 100%;
+}
+
+@media only screen and (max-width: 30rem) {
+  .header {
+    top: 7vh;
+  }
 }

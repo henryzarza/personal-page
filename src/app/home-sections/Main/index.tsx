@@ -1,12 +1,12 @@
 'use client';
 
 import Image from 'next/image';
-import { useRef, useEffect } from "react";
+import { useRef, useEffect } from 'react';
 
-import { buildThresholdList } from "@/constants";
+import { buildThresholdList } from '@/constants';
 import medellin from 'public/medellin.png';
 import mountains from 'public/mountains.png';
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
 export default function Main() {
   const refTitle = useRef<HTMLHeadElement>(null);
