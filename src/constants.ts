@@ -1,24 +1,11 @@
-export const LANGUAGES = {
-  EN: 'en',
-  IT: 'it'
-};
+// TODO: to be defined
+export const WHAT_CAN_I_DO_TEXTS = [];
 
-export const WHAT_CAN_I_DO_TEXTS = [
-  'WHAT_CAN_I_DO_1',
-  'WHAT_CAN_I_DO_2',
-  'WHAT_CAN_I_DO_3',
-  'WHAT_CAN_I_DO_4',
-  'WHAT_CAN_I_DO_5',
-  'WHAT_CAN_I_DO_6',
-  'WHAT_CAN_I_DO_7',
-  'WHAT_CAN_I_DO_8',
-  'WHAT_CAN_I_DO_9'
-];
+// export const BACKEND_URL = 'https://private-a65849-personalpage1.apiary-mock.com/';
 
-export const BACKEND_URL = 'https://private-a65849-personalpage1.apiary-mock.com/';
+export const REGISTERS_PER_PAGE = 6;
 
-export const REGISTER_PER_PAGE = 6;
-
+// TODO: to be defined
 export const INSPIRATION_CARDS = [
   {
     title: 'INSPIRATION_DESIGN',
@@ -155,7 +142,7 @@ export const INSPIRATION_CARDS = [
 export const buildThresholdList = (steps: number) => {
   const thresholds = [0];
 
-  for (let i = 1.0; i <= steps; i++) {
+  for (let i = 1; i <= steps; i++) {
     const ratio = i / steps;
     thresholds.push(ratio);
   }
