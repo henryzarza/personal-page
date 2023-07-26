@@ -89,7 +89,8 @@ body {
 }
 
 .highlighted-text,
-.link-text {
+.link-text,
+strong {
   font-family: var(--font-gambetta);
   font-size: 1rem;
   font-style: normal;
@@ -129,5 +130,9 @@ body {
 
 .link-text:focus {
   outline: var(--outline);
+}
+
+strong {
+  font-size: inherit;
 }
 /* Finish style guide */

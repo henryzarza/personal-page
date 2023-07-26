@@ -1,49 +1,44 @@
 .container {
-  --icon-movement-color: #FFF;
-
   align-items: center;
-  background-color: var(--woodsmoke);
+  background-color: var(--primary-color);
   display: flex;
   justify-content: center;
   min-height: 100vh;
   overflow: hidden;
-  padding: 1rem 2rem 0.5rem;
+  padding: var(--separation-padding-y) 1rem;
   position: relative;
 }
 
 .content {
-  background-color: var(--woodsmoke);
-  border: 0.19rem solid var(--white);
-  border-radius: 0.3rem;
+  background-color: var(--primary-color);
+  border: 0.1875rem solid var(--white);
+  border-radius: var(--border-radius);
   max-width: 32.5rem;
-  padding: 1rem 2rem;
+  padding: 1.25rem 2.25rem;
   width: 100%;
   z-index: 1;
 }
 
-.title {
-  margin-bottom: 1.88rem;
-  width: 100%;
-}
-
 .list {
-  list-style-type: disc;
+  margin-top: 1.94rem;
   padding-left: 1rem;
 }
 
 .list li {
-  list-style-type: disc;
   margin-bottom: 0.5rem;
 }
 
 .icon {
   position: absolute;
-  user-select: none;
 }
 
 .icon path {
-  fill: var(--icon-movement-color);
-  transition: fill var(--quick-transition-duration) var(--transition-function);
+  fill: var(--white);
+  transition: fill var(--transition-duration) var(--transition-function);
+}
+
+.icon:hover path {
+  fill: var(--secondary-highlight-color);
 }
 
 @media only screen and (max-width: 40rem) {
@@ -56,7 +51,7 @@
   }
 
   .content {
-    border-width: 0.05rem;
+    border-width: 0.125rem;
   }
 }
 

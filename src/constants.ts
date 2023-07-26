@@ -1,5 +1,14 @@
-// TODO: to be defined
-export const WHAT_CAN_I_DO_TEXTS = [];
+export const WHAT_DO_I_KNOW_LIST = [
+  "<strong>JavaScript</strong> using some <strong>Web APIs, Service worker, web workers</strong>. Currently, I'm improving my <strong>VueJS</strong> skills and learning <strong>Svelte</strong>.",
+  "<strong>ReactJS</strong> using some <strong>libraries, GraphQL, Redux, Hooks</strong>, and <strong>Context API</strong>. I'm improving my <strong>React Native</strong> skills",
+  "<strong>Angular</strong> using some <strong>libraries, NGRX, and RxJS.</strong>",
+  "<strong>CSS</strong> using <strong>SCSS, Less, and Stylus</strong> preprocessors. <strong>Libraries</strong> and frameworks (<strong>Bootstrap, Materialize, Foundation, Material Design, Tachyons, Tailwind, and Chakra UI</strong>). <strong>CSS modules and styled components</strong>.",
+  "<strong>HTML</strong> using several <strong>APIs</strong>, and preprocessors (<strong>Pug, Slim, and Handlebars)</strong>.",
+  "<strong>Git</strong> and <strong>gitflow</strong>.",
+  "<strong>NodeJS</strong> using <strong>Express</strong> framework. I'm learning <strong>Nest</strong>",
+  "Database management system (<strong>PostgreSQL, MySQL, Oracle 10g - 11g</strong> using <strong>PL/SQL</strong>, <strong>SQL Server</strong> using <strong>Transact SQL)</strong>, and MongoDB.",
+  "Testing libraries: <strong>React Testing Library, Mocha, Jest,</strong>, and <strong>Test Cafe</strong>. I'm learning <strong>Playwright</strong>",
+];
 
 // export const BACKEND_URL = 'https://private-a65849-personalpage1.apiary-mock.com/';
 
