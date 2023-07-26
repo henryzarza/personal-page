@@ -135,4 +135,17 @@ strong {
 strong {
   font-size: inherit;
 }
+
+button {
+  background: none;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  padding: 0.8rem 2.5rem;
+  transition: all var(--transition-duration) var(--transition-function);
+}
+
+button:focus {
+  outline: var(--outline);
+}
 /* Finish style guide */

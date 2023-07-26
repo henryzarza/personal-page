@@ -1,32 +1,30 @@
 .container {
   align-items: center;
-  background-color: var(--wheatfield);
+  background-color: var(--secondary-light-color);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 3.75rem 2rem;
-}
-
-.title {
-  margin-bottom: 2.5rem;
+  padding: var(--separation-padding-y) 1rem;
+  position: relative;
 }
 
 .paragraph {
-  margin-bottom: 5.63rem;
-  max-width: 39.7rem;
+  margin-bottom: 5.75rem;
+  margin-top: 2.31rem;
+  max-width: 39.625rem;
   width: 100%;
 }
 
 .timeline {
-  max-width: var(--content-width);
+  max-width: var(--max-width);
   position: relative;
   width: 100%;
 }
 
 .timeline::after {
-  background: linear-gradient(180deg, var(--silver-tree) 0%, var(--bismark) 100%);
+  background: linear-gradient(45deg, var(--gradient-end-color) 0%, var(--gradient-start-color) 100%);
   bottom: 0;
-  content: "";
+  content: '';
   left: 50%;
   position: absolute;
   top: 0;
@@ -34,7 +32,7 @@
 }
 
 .circle {
-  background-color: var(--silver-tree);
+  background-color: var(--gradient-start-color);
   border-radius: 50%;
   height: 1.25rem;
   left: 49.5%;
@@ -45,7 +43,7 @@
 }
 
 .circle:last-of-type {
-  background-color: var(--bismark);
+  background-color: var(--gradient-end-color);
   bottom: -0.625rem;
   top: initial;
 }
@@ -66,12 +64,14 @@
 }
 
 .card {
+  align-items: flex-start;
   background-color: var(--white);
-  border-radius: 0.5rem;
-  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
+  border-radius: var(--border-radius);
+  box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.3);
   display: flex;
+  gap: 0.9rem;
   flex-direction: column;
-  max-width: 24.4rem;
+  max-width: 24.4375rem;
   padding: 1rem;
   width: 100%;
 }
@@ -96,35 +96,37 @@
 .card::after {
   align-items: center;
   background-color: var(--white);
-  border: 0.2rem solid var(--wheatfield);
+  border: 0.125rem solid var(--primary-color);
   border-radius: 50%;
-  color: var(--tom-thumb);
+  color: var(--primary-color);
   content: attr(data-year);
   display: flex;
-  font-size: 1.25rem;
-  font-weight: 700;
-  height: 4.4rem;
+  font-family: var(--font-chubbo);
+  font-size: 1.125rem;
+  font-weight: 800;
+  height: 4.375rem;
   justify-content: center;
+  line-height: normal;
   position: absolute;
-  right: -2.75rem;
+  right: -2.5rem;
   top: 3rem;
-  width: 4.4rem;
+  width: 4.375rem;
   z-index: 1;
 }
 
 .item:nth-of-type(odd) .card::after {
-  left: -2.19rem;
+  left: -2rem;
   right: initial;
 }
 
 @media only screen and (max-width: 40rem) {
   .container {
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1.5rem;
   }
 
-  .paragraph,
-  .title {
+  .paragraph {
     margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 
   .timeline::after {
@@ -157,4 +159,45 @@
     right: initial;
     width: 3rem;
   }
+}
+
+.footer {
+  align-items: center;
+  background: linear-gradient(180deg, transparent 0%, var(--secondary-light-color) 50%);
+  backdrop-filter: blur(4px);
+  box-shadow: 0px -4px 10px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  inset: auto 0 0;
+  min-height: 12.75rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.button {
+  align-items: center;
+  background-color: var(--primary-color);
+  border: 0.0625rem solid var(--primary-color);
+  display: flex;
+  justify-content: center;
+}
+
+.button:is(:hover, :active) {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+.icon {
+  height: 1.375rem;
+  margin-left: 0.5rem;
+  width: 1.375rem;
+}
+
+.button:is(:hover, :active) .icon path {
+  stroke: var(--primary-color);
+}
+
+.icon path {
+  stroke: var(--white);
+  transition: stroke var(--transition-duration) var(--transition-function);
 }

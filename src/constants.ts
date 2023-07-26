@@ -10,7 +10,7 @@ export const WHAT_DO_I_KNOW_LIST = [
   "Testing libraries: <strong>React Testing Library, Mocha, Jest,</strong>, and <strong>Test Cafe</strong>. I'm learning <strong>Playwright</strong>",
 ];
 
-// export const BACKEND_URL = 'https://private-a65849-personalpage1.apiary-mock.com/';
+export const PROJECTS_TO_SHOW = 3;
 
 export const REGISTERS_PER_PAGE = 6;
 
