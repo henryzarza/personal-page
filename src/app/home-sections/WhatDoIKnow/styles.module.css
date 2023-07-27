@@ -1,4 +1,7 @@
 .container {
+  --icons-movement-X: 0;
+  --icons-movement-Y: 0;
+
   align-items: center;
   background-color: var(--primary-color);
   display: flex;
@@ -30,6 +33,7 @@
 
 .icon {
   position: absolute;
+  transform: translate3d(var(--icons-movement-X), var(--icons-movement-Y), 0);
 }
 
 .icon path {
@@ -39,6 +43,12 @@
 
 .icon:hover path {
   fill: var(--secondary-highlight-color);
+}
+
+@media (prefers-reduced-motion) {
+  .icon {
+    transform: none;
+  }
 }
 
 @media only screen and (max-width: 40rem) {
