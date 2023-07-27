@@ -136,7 +136,8 @@ strong {
   font-size: inherit;
 }
 
-button {
+button,
+.button {
   background: none;
   border: none;
   border-radius: var(--border-radius);
@@ -145,7 +146,23 @@ button {
   transition: all var(--transition-duration) var(--transition-function);
 }
 
-button:focus {
+button:focus,
+.button:focus {
   outline: var(--outline);
 }
 /* Finish style guide */
+
+.cards-container {
+  display: grid;
+  gap: 2.56rem;
+  grid-template-columns: repeat(auto-fill, minmax(20.625rem, 1fr));
+  margin: 0 auto;
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+@media only screen and (max-width: 40rem) {
+  .cards-container {
+    gap: 1rem;
+  }
+}

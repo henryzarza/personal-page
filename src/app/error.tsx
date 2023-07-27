@@ -15,9 +15,10 @@ export default function Error({
   }, [error])
  
   return (
-    <main className={styles.main}>
+    <main className={`${styles.main} ${styles.error}`}>
       <h2 className="heading-2">Something went wrong!</h2>
       <button
+        className={`highlighted-text white ${styles["btn-error"]}`}
         onClick={
           // Attempt to recover by trying to re-render the segment
           () => reset()

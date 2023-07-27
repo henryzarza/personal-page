@@ -1,0 +1,55 @@
+.main {
+  align-items: center;
+  background-color: var(--ceramic);
+  display: flex;
+  flex-direction: column;
+  gap: 2.56rem;
+  padding: calc(var(--separation-padding-y) + 5rem) 1rem var(--separation-padding-y);
+  position: relative;
+  overflow: hidden;
+}
+
+.paragraph {
+  max-width: 34.6875rem;
+  width: 100%;
+}
+
+.container {
+  z-index: 1;
+}
+
+.snow {
+  animation: snowing 20s linear infinite;
+  min-height: 200%;
+  min-width: 110vw;
+  pointer-events: none;
+  object-fit: cover;
+  translate: -2rem -25%;
+}
+
+@keyframes snowing {
+  from {
+    translate: -2rem -30%;
+  }
+  to {
+    translate: 1.5rem -2%;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .snow {
+    animation: none;
+  }
+}
+
+@media only screen and (max-width: 40rem) {
+  .section {
+    gap: 1.5rem;
+    padding: 5rem 1rem 1rem;
+  }
+
+  .snow {
+    min-height: unset;
+    min-width: unset;
+  }
+}

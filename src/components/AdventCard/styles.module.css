@@ -1,0 +1,44 @@
+.container {
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  display: flex;
+  gap: 0.4rem;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all var(--transition-duration) var(--transition-function);
+  width: 100%;
+}
+
+.container:is(:hover, :active) {
+  transform: scale(1.05);
+}
+
+.container:focus {
+  outline: var(--outline);
+}
+
+.container h6,
+.container p {
+  padding: 0 1rem;
+}
+
+.img-container {
+  height: 12.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.img-container::before {
+  box-shadow: inset 4px 4px 8px 0px rgba(0, 0, 0, 0.4), inset -4px -4px 8px 0px rgba(0, 0, 0, 0.4);
+  content: '';
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.img-container img {
+  object-fit: cover;
+}

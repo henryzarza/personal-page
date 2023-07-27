@@ -20,7 +20,7 @@ function WhiteCard({ className, data, classContainer } : WhiteCardProps) {
           <Image
             src={data.image}
             alt={data.title}
-            sizes="(min-width: 808px) 50vw, 100vw"
+            sizes="(min-width: 40rem) 30vw, 50vw"
             fill
           />
         </figure>

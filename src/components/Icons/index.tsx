@@ -242,14 +242,20 @@ export const Leaf2 = (props: { className: string; style: CSSProperties }) => (
 
 export const OutLink = ({ className } : { className?: string; }) => (
   <svg className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path id="Vector 89" d="M21 3H22V2H21V3ZM10.2929 12.2929C9.90237 12.6834 9.90237 13.3166 10.2929 13.7071C10.6834 14.0976 11.3166 14.0976 11.7071 13.7071L10.2929 12.2929ZM13 4L21 4V2L13 2V4ZM20 3V11H22V3H20ZM20.2929 2.29289L10.2929 12.2929L11.7071 13.7071L21.7071 3.70711L20.2929 2.29289Z" fill="inherit"/>
-    <path id="Vector 90" d="M9 4V4C7.13077 4 6.19615 4 5.5 4.40192C5.04394 4.66523 4.66523 5.04394 4.40192 5.5C4 6.19615 4 7.13077 4 9V14C4 16.8284 4 18.2426 4.87868 19.1213C5.75736 20 7.17157 20 10 20H15C16.8692 20 17.8038 20 18.5 19.5981C18.9561 19.3348 19.3348 18.9561 19.5981 18.5C20 17.8038 20 16.8692 20 15V15" stroke="inherit" strokeWidth="2" strokeLinecap="round"/>
+    <path d="M21 3H22V2H21V3ZM10.2929 12.2929C9.90237 12.6834 9.90237 13.3166 10.2929 13.7071C10.6834 14.0976 11.3166 14.0976 11.7071 13.7071L10.2929 12.2929ZM13 4L21 4V2L13 2V4ZM20 3V11H22V3H20ZM20.2929 2.29289L10.2929 12.2929L11.7071 13.7071L21.7071 3.70711L20.2929 2.29289Z" fill="inherit"/>
+    <path d="M9 4V4C7.13077 4 6.19615 4 5.5 4.40192C5.04394 4.66523 4.66523 5.04394 4.40192 5.5C4 6.19615 4 7.13077 4 9V14C4 16.8284 4 18.2426 4.87868 19.1213C5.75736 20 7.17157 20 10 20H15C16.8692 20 17.8038 20 18.5 19.5981C18.9561 19.3348 19.3348 18.9561 19.5981 18.5C20 17.8038 20 16.8692 20 15V15" stroke="inherit" strokeWidth="2" strokeLinecap="round"/>
   </svg>
 );
 
 export const ExpandDown = ({ className } : { className?: string; }) => (
   <svg className={className} width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path id="Vector 9" d="M16.5 11L11 16.5L5.5 11" stroke="inherit" strokeWidth="2"/>
-    <path id="Vector 10" d="M16.5 5.5L11 11L5.5 5.5" stroke="inherit" strokeWidth="2"/>
+    <path d="M16.5 11L11 16.5L5.5 11" stroke="inherit" strokeWidth="2"/>
+    <path d="M16.5 5.5L11 11L5.5 5.5" stroke="inherit" strokeWidth="2"/>
+  </svg>
+);
+
+export const CurvedArrow = ({ className } : { className?: string; }) => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 10L20.7071 10.7071L21.4142 10L20.7071 9.29289L20 10ZM3 18C3 18.5523 3.44772 19 4 19C4.55229 19 5 18.5523 5 18L3 18ZM15.7071 15.7071L20.7071 10.7071L19.2929 9.29289L14.2929 14.2929L15.7071 15.7071ZM20.7071 9.29289L15.7071 4.29289L14.2929 5.70711L19.2929 10.7071L20.7071 9.29289ZM20 9L10 9L10 11L20 11L20 9ZM3 16L3 18L5 18L5 16L3 16ZM10 9C6.13401 9 3 12.134 3 16L5 16C5 13.2386 7.23858 11 10 11L10 9Z" fill="inherit"/>
   </svg>
 );

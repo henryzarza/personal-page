@@ -10,13 +10,19 @@
   top: 0;
   transition: translate var(--quick-transition-duration) var(--transition-function);
   translate: 0 -100%;
+  z-index: 3;
+}
+
+.static {
+  background-color: var(--white);
+  translate: 0;
 }
 
 .nav-content {
   align-items: center;
   display: flex;
   gap: 1rem;
-  max-width: calc(var(--max-width) - 2rem);
+  max-width: var(--max-width);
   margin: 0 auto;
   width: 100%;
 }
