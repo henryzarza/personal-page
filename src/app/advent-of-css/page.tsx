@@ -9,8 +9,7 @@ async function getAdvents(): Promise<AdventCSSChallenge[]> {
   const res = await fetch(`${process.env.BACKEND_URL}/advents`);
 
   if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error('Failed to fetch data')
+    throw new Error('Failed to fetch data');
   }
  
   return res.json();
