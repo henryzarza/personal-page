@@ -2,7 +2,6 @@
   background-color: var(--gray);
   display: flex;
   flex-direction: column;
-  min-height: 90vh;
   padding: var(--separation-padding-y) 1rem;
 }
 

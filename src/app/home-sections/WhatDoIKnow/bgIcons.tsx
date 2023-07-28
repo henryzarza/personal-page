@@ -171,5 +171,15 @@ export const ICONS = [
     id: 32,
     Cmp: Lightning,
     cssProperties: { width: '50px', height: '60px', bottom: '80px', right: '25%' },
+  },
+  {
+    id: 33,
+    Cmp: Leaf,
+    cssProperties: { width: '60px', height: '60px', top: '-50px', right: '35%' },
+  },
+  {
+    id: 34,
+    Cmp: Leaf,
+    cssProperties: { width: '40px', height: '40px', top: '20%', left: '1%' },
   }
 ];

@@ -54,15 +54,24 @@
 }
 
 .accordion-button {
+  align-items: center;
   background-color: transparent;
   border: none;
   border-radius: var(--border-radius);
   color: var(--primary-color);
   cursor: pointer;
+  display: flex;
   padding: 0.5rem;
   transition: background-color var(--quick-transition-duration) var(--transition-function);
 }
 
 .accordion-button:hover {
   background-color: var(--secondary-light-color);
+}
+
+.accordion-button svg {
+  height: 1.5rem;
+  fill: var(--primary-color);
+  transition: transform var(--quick-transition-duration) var(--transition-function);
+  width: 1.5rem;
 }
