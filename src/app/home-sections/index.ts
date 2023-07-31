@@ -5,6 +5,7 @@ import Projects from './Projects';
 import AdventOfCSS from './AdventCSS';
 import DaysOfCode from './DaysOfCode';
 import Cookbook from './Cookbook';
+import Inspiration from './Inspiration';
 
 export {
   Main,
@@ -13,5 +14,6 @@ export {
   Projects,
   AdventOfCSS,
   DaysOfCode,
-  Cookbook
+  Cookbook,
+  Inspiration
 };

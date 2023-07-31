@@ -34,8 +34,8 @@ export default function Cookbook({ data } : { data: CookbookField[] }) {
   }, []);
 
   return (
-    <section className={styles.container} ref={refInteraction}>
-      <h2 className="heading-2 white text-center">
+    <section className={styles.container} ref={refInteraction} id="cookbook">
+      <h2 className="heading-2 white">
         Cookbook
       </h2>
       <p className={`base-text white ${styles.paragraph}`}>

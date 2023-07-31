@@ -11,7 +11,8 @@ import {
   Projects,
   AdventOfCSS,
   DaysOfCode,
-  Cookbook
+  Cookbook,
+  Inspiration
 } from './home-sections';
 import styles from './page.module.css';
 
@@ -77,6 +78,7 @@ export default async function Home() {
       {advents && <AdventOfCSS data={advents} />}
       {challenges && <DaysOfCode data={challenges} />}
       {cookbooks && <Cookbook data={cookbooks} />}
+      <Inspiration />
     </main>
   )
 }

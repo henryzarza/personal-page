@@ -1,3 +1,14 @@
+import colors from 'public/inspiration_icons/wheel.png';
+import constitution from 'public/inspiration_icons/constitution.png';
+import css from 'public/inspiration_icons/css.png';
+import design from 'public/inspiration_icons/design.png';
+import font from 'public/inspiration_icons/font.png';
+import literature from 'public/inspiration_icons/literature.png';
+import pictures from 'public/inspiration_icons/pictures.png';
+import programming from 'public/inspiration_icons/programming.png';
+import travel from 'public/inspiration_icons/travel.png';
+import code from 'public/inspiration_icons/code.png';
+
 export const WHAT_DO_I_KNOW_LIST = [
   "<strong>JavaScript</strong> using some <strong>Web APIs, Service worker, web workers</strong>. Currently, I'm improving my <strong>VueJS</strong> skills and learning <strong>Svelte</strong>.",
   "<strong>ReactJS</strong> using some <strong>libraries, GraphQL, Redux, Hooks</strong>, and <strong>Context API</strong>. I'm improving my <strong>React Native</strong> skills",
@@ -16,56 +27,10 @@ export const COOKBOOKS_TO_SHOW = 4;
 
 export const REGISTERS_PER_PAGE = 6;
 
-// TODO: to be defined
 export const INSPIRATION_CARDS = [
   {
-    title: 'INSPIRATION_DESIGN',
-    links: [
-      {
-        text: 'Dribbble',
-        link: 'https://dribbble.com/'
-      },
-      {
-        text: 'Figma',
-        link: 'https://www.figma.com/'
-      },
-      {
-        text: 'Behance',
-        link: 'https://www.behance.net/'
-      },
-      {
-        text: 'Project 365',
-        link: 'https://project365.design/'
-      }
-    ]
-  },
-  {
-    title: 'INSPIRATION_DEVELOPMENT',
-    links: [
-      {
-        text: 'Free frontend',
-        link: 'https://freefrontend.com/'
-      },
-      {
-        text: 'Github web sites',
-        link: 'https://github.com/sdmg15/Best-websites-a-programmer-should-visit'
-      },
-      {
-        text: 'Tympanus',
-        link: 'https://tympanus.net/'
-      },
-      {
-        text: 'Code talks',
-        link: 'https://codetalks.tv/'
-      },
-      {
-        text: 'CSS vocabs',
-        link: 'http://apps.workflower.fi/vocabs/css/en'
-      }
-    ]
-  },
-  {
-    title: 'INSPIRATION_COLORS',
+    title: 'Colors',
+    image: colors,
     links: [
       {
         text: 'Coolor',
@@ -82,11 +47,130 @@ export const INSPIRATION_CARDS = [
       {
         text: 'Name that color',
         link: 'http://chir.ag/projects/name-that-color/'
+      },
+      {
+        text: 'Gradient Generator',
+        link: 'https://www.joshwcomeau.com/gradient-generator/'
       }
     ]
   },
   {
-    title: 'INSPIRATION_PICTURES',
+    title: 'CSS',
+    image: css,
+    links: [
+      {
+        text: 'Codrops: CSS Reference',
+        link: 'https://tympanus.net/codrops/css_reference/'
+      },
+      {
+        text: 'CSS vocabs',
+        link: 'http://apps.workflower.fi/vocabs/css/en'
+      },
+      {
+        text: 'Modern CSS Solutions',
+        link: 'https://moderncss.dev/'
+      },
+      {
+        text: 'Selectors Level 4',
+        link: 'https://drafts.csswg.org/selectors-4/#overview'
+      }
+    ]
+  },
+  {
+    title: 'Design',
+    image: design,
+    links: [
+      {
+        text: 'Figma Mastery',
+        link: 'https://www.howtodesignbetter.com/figma-mastery'
+      },
+      {
+        text: 'UX Challenges',
+        link: 'https://uxtools.co/challenges'
+      },
+      {
+        text: 'Project 365',
+        link: 'https://project365.design/'
+      },
+      {
+        text: 'Collect UI',
+        link: 'https://collectui.com/designs'
+      },
+    ]
+  },
+  {
+    title: 'English',
+    image: literature,
+    links: [
+      {
+        text: 'Free4Talk',
+        link: 'https://www.free4talk.com/'
+      },
+      {
+        text: 'ReadTheory',
+        link: 'https://readtheory.org/'
+      },
+      {
+        text: 'Ororo',
+        link: 'https://ororo.tv/en'
+      },
+      {
+        text: 'Speech notes',
+        link: 'https://speechnotes.co/'
+      },
+      {
+        text: 'Engoo',
+        link: 'https://engoo.com/'
+      }
+    ]
+  },
+  {
+    title: 'Italian',
+    image: constitution,
+    links: [
+      {
+        text: 'Lingua',
+        link: 'https://lingua.com/it/'
+      },
+      {
+        text: 'The Fable Cottage',
+        link: 'https://www.thefablecottage.com/languages/italian'
+      },
+      {
+        text: 'The Italian experiment',
+        link: 'https://www.theitalianexperiment.com/stories'
+      },
+      {
+        text: 'Speech notes',
+        link: 'https://speechnotes.co/'
+      },
+      {
+        text: '@italianoautomatico',
+        link: 'https://youtube.com/@italianoautomatico'
+      }
+    ]
+  },
+  {
+    title: 'Fonts',
+    image: font,
+    links: [
+      {
+        text: 'Font share',
+        link: 'https://www.fontshare.com/'
+      },
+      {
+        text: 'Free faces',
+        link: 'https://www.freefaces.gallery/'
+      },
+      {
+        text: 'Randoma11y',
+        link: 'https://randoma11y.com/'
+      }
+    ]
+  },
+  {
+    title: 'Pictures',
+    image: pictures,
     links: [
       {
         text: 'Unsplash',
@@ -99,36 +183,16 @@ export const INSPIRATION_CARDS = [
       {
         text: 'Flaticon',
         link: 'https://www.flaticon.com/'
+      },
+      {
+        text: 'Free icons',
+        link: 'https://freeicons.io/'
       }
     ]
   },
   {
-    title: 'INSPIRATION_CAREER',
-    links: [
-      {
-        text: 'Roadmap',
-        link: 'https://roadmap.sh/'
-      },
-      {
-        text: 'Codrops',
-        link: 'https://tympanus.net/codrops/css_reference/'
-      },
-      {
-        text: '30 seconds of code',
-        link: 'https://www.30secondsofcode.org/'
-      },
-      {
-        text: 'Code tidbits',
-        link: 'https://www.samanthaming.com/tidbits/'
-      },
-      {
-        text: 'Data structures & Algorithms',
-        link: 'https://techdevguide.withgoogle.com/paths/data-structures-and-algorithms/'
-      }
-    ]
-  },
-  {
-    title: 'INSPIRATION_TRIPS',
+    title: 'Travel',
+    image: travel,
     links: [
       {
         text: 'Nomadlist',
@@ -143,9 +207,73 @@ export const INSPIRATION_CARDS = [
         link: 'https://www.doyouneedvisa.com/'
       },
       {
-        text: 'A soft murmur',
-        link: 'https://asoftmurmur.com/'
+        text: 'Better life',
+        link: 'https://www.oecdbetterlifeindex.org/'
       }
+    ]
+  },
+  {
+    title: 'Development',
+    image: programming,
+    links: [
+      {
+        text: 'Websites a programmer should visit',
+        link: 'https://github.com/sdmg15/Best-websites-a-programmer-should-visit'
+      },
+      {
+        text: 'Public APIs',
+        link: 'https://github.com/public-apis/public-apis'
+      },
+      {
+        text: 'Code talks',
+        link: 'https://codetalks.tv/'
+      },
+      {
+        text: 'Any APIs',
+        link: 'https://any-api.com/'
+      },
+      {
+        text: 'Roadmap',
+        link: 'https://roadmap.sh/'
+      },
+      {
+        text: 'Code tidbits',
+        link: 'https://www.samanthaming.com/tidbits/'
+      },
+      {
+        text: 'Data structures & Algorithms',
+        link: 'https://techdevguide.withgoogle.com/paths/data-structures-and-algorithms/'
+      }
+    ]
+  },
+  {
+    title: 'Coding',
+    image: code,
+    links: [
+      {
+        text: 'Exercism',
+        link: 'https://exercism.org/'
+      },
+      {
+        text: 'Hacker rank',
+        link: 'https://www.hackerrank.com/'
+      },
+      {
+        text: 'Daily coding problem',
+        link: 'https://www.dailycodingproblem.com/'
+      },
+      {
+        text: 'Code signal',
+        link: 'https://codesignal.com/'
+      },
+      {
+        text: '30 seconds of code',
+        link: 'https://www.30secondsofcode.org/'
+      },
+      {
+        text: 'Free frontend',
+        link: 'https://freefrontend.com/'
+      },
     ]
   }
 ];

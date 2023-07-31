@@ -114,10 +114,6 @@ strong {
   text-align: center;
 }
 
-.white {
-  color: var(--white);
-}
-
 .link-text {
   color: var(--highlight-color);
   text-decoration: underline;
@@ -149,6 +145,10 @@ button,
 button:focus,
 .button:focus {
   outline: var(--outline);
+}
+
+.white {
+  color: var(--white);
 }
 /* Finish style guide */
 

@@ -1,0 +1,77 @@
+.container {
+  align-items: center;
+  background-color: var(--secondary-color);
+  display: flex;
+  gap: 2.69rem;
+  flex-direction: column;
+  padding: var(--separation-padding-y) 1rem;
+}
+
+.paragraph {
+  max-width: 34.6875rem;
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.19rem;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+.card {
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  border: 0.125rem solid var(--white);
+  flex: 0 1 15.75rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.card-header {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.card-image {
+  border: 0.125rem solid var(--primary-text-color);
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-light-color);
+  line-height: 0;
+  padding: 0.38rem;
+}
+
+.card-content {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: disc;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.link {
+  color: var(--white);
+  font-weight: 400;
+}
+
+.link:is(:active, :hover) {
+  color: var(--highlight-color);
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 40rem) {
+  .container {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .card-container {
+    gap: 1rem;
+  }
+}

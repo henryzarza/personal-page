@@ -19,6 +19,7 @@ export default function AboutMe() {
               src={henryProfileImg}
               alt="Henry Zarza profile image"
               placeholder="blur"
+              sizes="(min-width: 40rem) 30vw, 40vw"
               priority
               fill
             />
@@ -41,10 +42,6 @@ export default function AboutMe() {
                 I love creative code, UI/UX, I&apos;m a design enthusiast, so I tend to play around in my
                 <Link className={`link-text ${styles.link}`} href="https://codepen.io/HenryZarza/" rel="author" target="_blank">Codepen</Link>
                 with some stuff.
-              </li>
-              <li className="base-text">
-                From the beginning of 2020 to the end of 2023, I worked, lived and traveled in different
-                parts of the world, now I&apos;ve been trying to get back to the &quot;normal life&quot;.
               </li>
             </ul>
           </div>

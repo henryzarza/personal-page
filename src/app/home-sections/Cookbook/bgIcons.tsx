@@ -38,12 +38,6 @@ export const ICONS_MOVEMENT = [
     speed: '-4'
   },
   {
-    id: 5,
-    Cmp: AlarmClock,
-    cssProperties: { width: '55px', height: '55px', bottom: '30%', left: '19vw' },
-    speed: '-5'
-  },
-  {
     id: 6,
     Cmp: FlaskLight,
     cssProperties: { width: '35px', height: '35px', bottom: '18%', left: '22px' },
@@ -158,7 +152,7 @@ export const ICONS_MOVEMENT = [
     speed: '1'
   },
   {
-    id: 32,
+    id: 5,
     Cmp: Atom,
     cssProperties: { width: '80px', height: '60px', bottom: '8%', right: '31%' },
     speed: '-1'
