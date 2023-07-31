@@ -4,6 +4,7 @@ import WhatDoIKnow from './WhatDoIKnow';
 import Projects from './Projects';
 import AdventOfCSS from './AdventCSS';
 import DaysOfCode from './DaysOfCode';
+import Cookbook from './Cookbook';
 
 export {
   Main,
@@ -11,5 +12,6 @@ export {
   WhatDoIKnow,
   Projects,
   AdventOfCSS,
-  DaysOfCode
+  DaysOfCode,
+  Cookbook
 };

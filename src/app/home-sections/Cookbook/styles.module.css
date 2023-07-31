@@ -1,39 +1,92 @@
 .container {
-  --icon-movement-color: #FFF;
-
   align-items: center;
-  background-color: var(--woodsmoke);
+  background-color: var(--primary-color);
   display: flex;
-  justify-content: center;
-  min-height: 100vh;
+  flex-direction: column;
+  gap: 2.69rem;
   overflow: hidden;
-  padding: 1rem 2rem 0.5rem;
+  padding: var(--separation-padding-y) 1rem;
   position: relative;
 }
 
-.content {
-  background-color: var(--woodsmoke);
-  border: 0.19rem solid var(--white);
-  border-radius: 0.3rem;
-  max-width: 32.5rem;
-  padding: 1rem 2rem;
+.paragraph {
+  background-color: var(--primary-color);
+  max-width: 34.6875rem;
   width: 100%;
   z-index: 1;
 }
 
-.title {
-  margin-bottom: 1.88rem;
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  max-width: var(--max-width);
+  width: 100%;
+  z-index: 1;
+}
+
+.item {
+  border: 0.1875rem solid var(--primary-text-color);
+  border-radius: var(--border-radius);
+  background: var(--primary-color);
+  color: var(--white);
+  cursor: pointer;
+  padding: 1.13rem 1.38rem;
+  text-decoration: none;
+  transition: all var(--transition-duration) var(--transition-function);
   width: 100%;
 }
 
-.list {
-  list-style-type: disc;
-  padding-left: 1rem;
+.item:is(:hover, :active) {
+  background-color: var(--secondary-highlight-color);
+  color: var(--primary-text-color);
 }
 
-.list li {
-  list-style-type: disc;
-  margin-bottom: 0.5rem;
+.item:focus {
+  outline: var(--outline);
+}
+
+.chips-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.chip {
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  color: var(--primary-text-color);
+  padding: 0.3rem 0.45rem;
+}
+
+.button {
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: var(--primary-text-color);
+  display: flex;
+  z-index: 1;
+}
+
+.button:is(:hover, :active) {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+.btn-icon {
+  height: 1.375rem;
+  margin-left: 0.5rem;
+  width: 1.375rem;
+}
+
+.button:is(:hover, :active) .icon path {
+  stroke: var(--primary-color);
+}
+
+.btn-icon path {
+  stroke: var(--primary-text-color);
+  transition: stroke var(--transition-duration) var(--transition-function);
 }
 
 .icon {
@@ -41,22 +94,10 @@
   user-select: none;
 }
 
-.icon path {
-  fill: var(--icon-movement-color);
-  transition: fill var(--quick-transition-duration) var(--transition-function);
-}
-
 @media only screen and (max-width: 40rem) {
-  .list {
-    padding-left: 0;
-  }
-
   .container {
+    gap: 1.5rem;
     padding: 1rem;
-  }
-
-  .content {
-    border-width: 0.05rem;
   }
 }
 

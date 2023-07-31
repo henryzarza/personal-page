@@ -12,6 +12,8 @@ export const WHAT_DO_I_KNOW_LIST = [
 
 export const PROJECTS_TO_SHOW = 3;
 
+export const COOKBOOKS_TO_SHOW = 4;
+
 export const REGISTERS_PER_PAGE = 6;
 
 // TODO: to be defined

@@ -1,7 +1,8 @@
 import {
   ProjectInfo,
   AdventCSSChallenge,
-  CodeChallenge
+  CodeChallenge,
+  CookbookField,
 } from '@/types';
 import {
   Main,
@@ -10,6 +11,7 @@ import {
   Projects,
   AdventOfCSS,
   DaysOfCode,
+  Cookbook
 } from './home-sections';
 import styles from './page.module.css';
 
@@ -43,12 +45,28 @@ async function getChallenges(): Promise<CodeChallenge[]> {
   return res.json();
 }
 
+async function getCookbooks(): Promise<CookbookField[]> {
+  const res = await fetch(`${process.env.BACKEND_URL}/cookbook`);
+
+  if (!res.ok) {
+    throw new Error('Failed to fetch data');
+  }
+ 
+  return res.json();
+}
+
 export default async function Home() {
   const projectsData = getProjects();
   const adventsData = getAdvents();
   const challengesData = getChallenges();
+  const cookbooksData = getCookbooks();
 
-  const [projects, advents, challenges] = await Promise.all([projectsData, adventsData, challengesData]);
+  const [
+    projects,
+    advents,
+    challenges,
+    cookbooks
+  ] = await Promise.all([projectsData, adventsData, challengesData, cookbooksData]);
 
   return (
     <main className={styles.main}>
@@ -58,6 +76,7 @@ export default async function Home() {
       {projects && <Projects projects={projects} />}
       {advents && <AdventOfCSS data={advents} />}
       {challenges && <DaysOfCode data={challenges} />}
+      {cookbooks && <Cookbook data={cookbooks} />}
     </main>
   )
 }

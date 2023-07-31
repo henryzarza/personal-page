@@ -21,3 +21,11 @@ export type CodeChallenge = {
   image: string;
   link: string;
 }
+
+export type CookbookField = {
+  id: number;
+  title: string;
+  description: string;
+  link: string;
+  chips: Array<{ name: string; }>;
+}
