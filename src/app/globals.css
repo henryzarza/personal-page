@@ -121,7 +121,7 @@ strong {
 .link-text {
   color: var(--highlight-color);
   text-decoration: underline;
-  transform: color var(--transition-duration) var(--transition-function);
+  transition: color var(--transition-duration) var(--transition-function);
 }
 
 .link-text:hover {

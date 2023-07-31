@@ -179,7 +179,6 @@
   background-color: var(--primary-color);
   border: 0.0625rem solid var(--primary-color);
   display: flex;
-  justify-content: center;
 }
 
 .button:is(:hover, :active) {
