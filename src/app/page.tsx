@@ -20,7 +20,7 @@ async function getProjects(): Promise<ProjectInfo[]> {
   const res = await fetch(`${process.env.BACKEND_URL}/projects`);
 
   if (!res.ok) {
-    throw new Error('Failed to fetch data');
+    throw new Error('Failed to fetch Projects data');
   }
  
   return res.json();
@@ -30,7 +30,7 @@ async function getAdvents(): Promise<AdventCSSChallenge[]> {
   const res = await fetch(`${process.env.BACKEND_URL}/advents`);
 
   if (!res.ok) {
-    throw new Error('Failed to fetch data');
+    throw new Error('Failed to fetch Advents data');
   }
  
   return res.json();
@@ -40,7 +40,7 @@ async function getChallenges(): Promise<CodeChallenge[]> {
   const res = await fetch(`${process.env.BACKEND_URL}/challenges`);
 
   if (!res.ok) {
-    throw new Error('Failed to fetch data');
+    throw new Error('Failed to fetch Challenges data');
   }
  
   return res.json();
@@ -50,7 +50,7 @@ async function getCookbooks(): Promise<CookbookField[]> {
   const res = await fetch(`${process.env.BACKEND_URL}/cookbook`);
 
   if (!res.ok) {
-    throw new Error('Failed to fetch data');
+    throw new Error('Failed to fetch Cookbook data');
   }
  
   return res.json();

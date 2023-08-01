@@ -1,9 +1,16 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
 import { AdventCSSChallenge } from '@/types';
 import { AdventCard } from '@/components';
 import snow from 'public/snow.svg';
 import styles from './styles.module.css';
+
+export const metadata: Metadata = {
+  title: 'Advent of CSS',
+  description: 'Hi, I am Henry Zarza and this is my Advent of CSS summary.',
+}
 
 async function getAdvents(): Promise<AdventCSSChallenge[]> {
   const res = await fetch(`${process.env.BACKEND_URL}/advents`);

@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 export default function DaysOfCode({ data } : { data: CodeChallenge[] }) {
   return (
     <section className={styles.section}>
-      <h2 className="heading-2 white">#30DaysOfCreativeCode</h2>
+      <h2 className="heading-2 white">#30DaysOfCode</h2>
       <p className={`base-text white ${styles.paragraph}`}>
         In 2020, I decided to do this challenge to practice, improve, and learn new things
         about HTML, CSS, JavaScript, and Web APIs. I had to think &quot;out of the box&quot;
