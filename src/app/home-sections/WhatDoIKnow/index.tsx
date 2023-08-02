@@ -2,7 +2,8 @@
 
 import { useRef, useEffect } from 'react';
 
-import { WHAT_DO_I_KNOW_LIST, buildThresholdList } from '@/constants';
+import { WHAT_DO_I_KNOW_LIST } from '@/constants';
+import { buildThresholdList } from '@/utils';
 import { ICONS } from './bgIcons';
 import styles from './styles.module.css';
 

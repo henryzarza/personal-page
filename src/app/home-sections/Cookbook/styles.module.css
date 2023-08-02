@@ -27,7 +27,7 @@
 }
 
 .item {
-  border: 0.1875rem solid var(--primary-text-color);
+  border: 0.1875rem solid var(--contrast-text-color, var(--primary-text-color));
   border-radius: var(--border-radius);
   background: var(--primary-color);
   color: var(--white);
@@ -80,7 +80,7 @@
   width: 1.375rem;
 }
 
-.button:is(:hover, :active) .icon path {
+.button:is(:hover, :active) .btn-icon path {
   stroke: var(--primary-color);
 }
 

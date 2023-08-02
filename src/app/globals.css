@@ -5,7 +5,7 @@
   --highlight-color: #E16162;
   --secondary-color: #ABD1C6;
   --secondary-highlight-color: #F9BC60;
-  --secondary-light-color: #F2F7F5;
+  --secondary-light-color: color-mix(in srgb, var(--secondary-color) 20%, var(--white));
   --tertiary-color: #08232B;
   --gradient-start-color: #D6E598;
   --gradient-end-color: #1B9162;

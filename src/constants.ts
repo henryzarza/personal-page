@@ -278,13 +278,57 @@ export const INSPIRATION_CARDS = [
   }
 ];
 
-export const buildThresholdList = (steps: number) => {
-  const thresholds = [0];
-
-  for (let i = 1; i <= steps; i++) {
-    const ratio = i / steps;
-    thresholds.push(ratio);
+export const THEMES = [
+  {
+    id: 'green',
+    primary: '#004643',
+    secondary: '#ABD1C6',
+    highlight: '#E16162',
+    tertiary: '#08232B',
+    secondaryHighlight: '#F9BC60',
+    gradientStart: '#D6E598',
+    gradientEnd: '#1B9162'
+  },
+  {
+    id: 'brown',
+    primary: '#55423d',
+    secondary: '#ffc0ad',
+    highlight: '#9656a1',
+    tertiary: '#271c19',
+    secondaryHighlight: '#e78fb3',
+    gradientStart: '#ffc0ad',
+    gradientEnd: '#9656a1'
+  },
+  {
+    id: 'dark',
+    primary: '#16161a',
+    secondary: '#72757e',
+    highlight: '#2cb67d',
+    tertiary: '#242629',
+    secondaryHighlight: '#7f5af0',
+    gradientStart: '#94a1b2',
+    gradientEnd: '#242629',
+    contrastText: '#FFF',
+    contrastBackground: '#16161a'
+  },
+  {
+    id: 'pink',
+    primary: '#ff8ba7',
+    secondary: '#ffc6c7',
+    highlight: '#355245',
+    tertiary: '#594a4e',
+    secondaryHighlight: '#faeee7',
+    gradientStart: '#E4C3BA',
+    gradientEnd: '#D06676'
+  },
+  {
+    id: 'blue',
+    primary: '#3da9fc',
+    secondary: '#d8eefe',
+    highlight: '#ef4565',
+    tertiary: '#143E78',
+    secondaryHighlight: '#FFFFFE',
+    gradientStart: '#3da9fc',
+    gradientEnd: '#143E78'
   }
-
-  return thresholds;
-};
+];

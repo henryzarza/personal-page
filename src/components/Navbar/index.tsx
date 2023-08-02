@@ -1,10 +1,11 @@
-'use client'
+'use client';
  
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
-import { DropDownArrow } from '@/components/Icons';
+import { debounce } from '@/utils';
+import Accordion from './accordion';
 import styles from './styles.module.css';
 
 const setClassnames = (href: string, currenPathName: string) => 
@@ -12,14 +13,27 @@ const setClassnames = (href: string, currenPathName: string) =>
 
 export default function Navbar() {
   const pathName = usePathname();
-  const [isStatic, setIsStatic] = useState(false);
+  const refNav = useRef<HTMLDivElement>(null);
 
   useEffect(()  => {
-    setIsStatic(pathName !== '/');
-  }, [pathName]);
+    let scrollPos = 0;
+
+    const checkPosition = () => {
+      if (refNav.current) {
+        refNav.current.style.translate = window.scrollY < scrollPos ? '0' : '0 -100%';
+        scrollPos = window.scrollY;
+      }
+    }
+
+    window.addEventListener('scroll', debounce(checkPosition));
+
+    return () => {
+      window.removeEventListener('scroll', debounce(checkPosition));
+    };
+  }, []);
 
   return (
-    <nav className={`${styles.nav} ${isStatic ? styles.static : ''}`}>
+    <nav ref={refNav} className={`${styles.nav} ${pathName !== '/' ? styles.visible : ''}`}>
       <div className={styles["nav-content"]}>
         <div className={styles["nav-links"]} aria-roledescription='List of internal links'>
           <Link className={setClassnames("/", pathName)} href="/">Home</Link>
@@ -28,9 +42,7 @@ export default function Navbar() {
           <Link className={setClassnames("/#cookbook", pathName)} href="/#cookbook">Cookbook</Link>
           <Link className={setClassnames("/#inspiration", pathName)} href="/#inspiration">Inspiration</Link>
         </div>
-        <button className={`highlighted-text ${styles['accordion-button']}`}>
-          Change Theme <DropDownArrow />
-        </button>
+        <Accordion />
       </div>
     </nav>
   )

@@ -37,12 +37,12 @@
 }
 
 .icon path {
-  fill: var(--white);
+  fill: var(--secondary-highlight-color);
   transition: fill var(--transition-duration) var(--transition-function);
 }
 
 .icon:hover path {
-  fill: var(--secondary-highlight-color);
+  fill: var(--white);
 }
 
 @media (prefers-reduced-motion) {

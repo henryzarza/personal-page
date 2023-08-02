@@ -1,6 +1,7 @@
 .container {
   align-items: center;
   background-color: var(--secondary-color);
+  color: var(--contrast-text-color, var(--primary-text-color));
   display: flex;
   gap: 2.69rem;
   flex-direction: column;
