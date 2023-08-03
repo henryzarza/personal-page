@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## About
+
+Hi there, nice to e-meet you 👋 <br />
+I'm Henry Zarza a system engineer from Medellín, Colombia and this is the repo for my personal web page, I put a lot of love, creativity, and effort to make it a reality, the project is built with NextJS v.13, React v.18, and CSS only.
+
 ## Getting Started
 
 First, run the development server:
