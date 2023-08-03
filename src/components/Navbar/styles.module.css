@@ -154,10 +154,10 @@
 
 @media only screen and (max-width: 44rem) {
   .nav-content {
-    flex-direction: column;
+    justify-content: flex-end;
   }
 
-  .nav-links {
-    flex-direction: column;
+  .link:not(:first-of-type) {
+    display: none;
   }
 }
