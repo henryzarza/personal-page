@@ -1,0 +1,72 @@
+.container {
+  --icons-movement-X: 0;
+  --icons-movement-Y: 0;
+
+  align-items: center;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: var(--separation-padding-y) 1rem;
+  position: relative;
+}
+
+.content {
+  background-color: var(--primary-color);
+  border: 0.1875rem solid var(--white);
+  border-radius: var(--border-radius);
+  max-width: 32.5rem;
+  padding: 1.25rem 2.25rem;
+  width: 100%;
+  z-index: 1;
+}
+
+.list {
+  margin-top: 1.94rem;
+  padding-left: 1rem;
+}
+
+.list li {
+  margin-bottom: 0.5rem;
+}
+
+.icon {
+  position: absolute;
+  transform: translate3d(var(--icons-movement-X), var(--icons-movement-Y), 0);
+}
+
+.icon path {
+  fill: var(--secondary-highlight-color);
+  transition: fill var(--transition-duration) var(--transition-function);
+}
+
+.icon:hover path {
+  fill: var(--white);
+}
+
+@media (prefers-reduced-motion) {
+  .icon {
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 40rem) {
+  .list {
+    padding-left: 0;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .content {
+    border-width: 0.125rem;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .icon {
+    display: none;
+  }
+}

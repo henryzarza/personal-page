@@ -1,0 +1,61 @@
+.img {
+  border-radius: var(--border-radius);
+  border: 0.0625rem solid var(--primary-color);
+  height: 11.875rem;
+  position: relative;
+  max-width: 22.5rem;
+  width: 100%;
+}
+
+.img img {
+  object-fit: contain;
+  object-position: center;
+}
+
+.link {
+  align-items: center;
+  background-color: var(--white);
+  border: 0.0625rem solid var(--primary-color);
+  border-radius: var(--border-radius);
+  color: var(--primary-color);
+  display: flex;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  transition: all var(--transition-duration) var(--transition-function);
+}
+
+.link:is(:hover, :active) {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.link:focus {
+  outline: var(--outline);
+}
+
+.link:active {
+  transform: scale(0.95);
+}
+
+.link-icon {
+  --color-transition: var(--primary-color);
+  height: 1.5rem;
+  margin-left: 0.75rem;
+  width: 1.5rem;
+}
+
+.link:is(:hover, :active) .link-icon {
+  --color-transition: var(--white);
+}
+
+.link-icon path {
+  transition: all var(--transition-duration) var(--transition-function);
+}
+
+.link-icon path:first-of-type {
+  fill: var(--color-transition);
+}
+
+.link-icon path {
+  stroke: var(--color-transition);
+}

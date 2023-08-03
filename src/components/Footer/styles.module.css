@@ -1,0 +1,43 @@
+.footer {
+  align-items: center;
+  background-color: var(--tertiary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 15.625rem;
+  padding: 2rem 3rem;
+}
+
+.header {
+  margin-bottom: 2.94rem;
+  max-width: 43rem;
+  width: 100%;
+}
+
+.small-text {
+  align-self: flex-end;
+}
+
+.icon {
+  margin: 0 0.2rem;
+}
+
+.link {
+  gap: 1.25rem;
+  grid-template-columns: repeat(4, 1.25rem);
+  margin-bottom: 1rem;
+}
+
+.link svg path {
+  fill: var(--white);
+}
+
+@media only screen and (max-width: 40rem) {
+  .footer {
+    padding: 1rem;
+  }
+
+  .header {
+    margin-bottom: 1.5rem;
+  }
+}

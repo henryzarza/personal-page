@@ -1,0 +1,20 @@
+.main {
+  align-items: center;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 2.69rem;
+  padding: calc(var(--separation-padding-y) + 4rem) 1rem var(--separation-padding-y);
+}
+
+.paragraph {
+  max-width: 34.6875rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 40rem) {
+  .main {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+}

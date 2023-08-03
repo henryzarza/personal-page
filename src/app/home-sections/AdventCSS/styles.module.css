@@ -1,0 +1,84 @@
+.section {
+  align-items: center;
+  background-color: var(--ceramic);
+  display: flex;
+  flex-direction: column;
+  gap: 2.56rem;
+  min-height: 100vh;
+  padding: var(--separation-padding-y) 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.paragraph {
+  max-width: 34.6875rem;
+  width: 100%;
+}
+
+.container {
+  z-index: 1;
+}
+
+.link-button {
+  align-items: center;
+  background-color: var(--highlight-color);
+  border: 0.0625rem solid var(--highlight-color);
+  color: var(--white);
+  display: flex;
+  text-decoration: none;
+}
+
+.link-button:is(:hover, :active) {
+  background-color: var(--white);
+  color: var(--highlight-color);
+}
+
+.link-button:is(:hover, :active) svg path {
+  fill: var(--highlight-color);
+}
+
+.link-button:active {
+  transform: scale(0.95);
+}
+
+.link-button svg {
+  height: 1.5rem;
+  margin-left: 0.63rem;
+  width: 1.5rem;
+}
+
+.link-button svg path {
+  fill: var(--white);
+  transition: fill var(--transition-duration) var(--transition-function);
+}
+
+.snow {
+  animation: snowing 33s linear infinite;
+  min-height: 200vh;
+  min-width: 110vw;
+  pointer-events: none;
+  object-fit: cover;
+  translate: -2rem -20%;
+}
+
+@keyframes snowing {
+  from {
+    translate: -2rem -33%;
+  }
+  to {
+    translate: 1.5rem 1%;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .snow {
+    animation: none;
+  }
+}
+
+@media only screen and (max-width: 40rem) {
+  .section {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+}
