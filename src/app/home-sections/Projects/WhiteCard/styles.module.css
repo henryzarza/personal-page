@@ -1,15 +1,9 @@
 .img {
-  border-radius: var(--border-radius);
   border: 0.0625rem solid var(--primary-color);
   height: 11.875rem;
   position: relative;
   max-width: 22.5rem;
   width: 100%;
-}
-
-.img img {
-  object-fit: contain;
-  object-position: center;
 }
 
 .link {

@@ -27,7 +27,7 @@ export default function AboutMe() {
           <div className={styles["text-content"]}>
             <p className="base-text">
               Hi, nice to e-meet you <span aria-label='Hand to say hello'>👋</span> <br />
-              I&apos;m Henry Zarza a system engineer from Medellín, Colombia. I defined myself
+              I&apos;m Henry Zarza a system engineer from Colombia. I defined myself
               as dedicated and passionate about what I like, self-taught, adventurous, nerdy,
               and creative. I love to push my limits every day and face new challenges.
             </p>

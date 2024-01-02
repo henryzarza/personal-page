@@ -13,12 +13,12 @@ export default function Footer() {
         </blockquote>
       </div>
       <SocialLinks classNameContainer={styles.link} />
-      <small className={`small-text white ${styles["small-text"]}`}>
+      <small className="small-text white text-center">
         Made with
         <span className={styles.icon} role="img" aria-label="love">
           ❤️
         </span>
-        by Henry Zarza, 2023
+        by Henry Zarza, 2024
       </small>
     </footer>
   );

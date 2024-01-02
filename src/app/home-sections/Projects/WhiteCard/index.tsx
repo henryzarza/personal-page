@@ -21,6 +21,8 @@ function WhiteCard({ className, data, classContainer } : WhiteCardProps) {
             src={data.image}
             alt={data.title}
             sizes="(min-width: 40rem) 30vw, 50vw"
+            objectFit="cover"
+            objectPosition="top"
             fill
           />
         </figure>

@@ -5,7 +5,7 @@ import { ProjectInfo } from '@/types';
 import { PROJECTS_TO_SHOW } from '@/constants';
 import { ExpandDown } from '@/components/Icons';
 import WhiteCard from './WhiteCard';
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
 export default function Projects({ projects } : { projects: ProjectInfo[] }) {
   const [endIndex, setEndIndex] = useState(PROJECTS_TO_SHOW);
@@ -16,7 +16,7 @@ export default function Projects({ projects } : { projects: ProjectInfo[] }) {
         Projects
       </h2>
       <p className={`base-text ${styles.paragraph}`}>
-        These are not all the projects in where I&apos;ve participated and done (for confidentiality and
+        These are not all the projects where I&apos;ve participated and done (for confidentiality and
         privacy of information I can&apos;t show them all). Many of the following projects are personal
         and small because my goal and purpose is <strong>learning</strong> and <strong>testing</strong> libraries,
         frameworks, tools, and other things.
